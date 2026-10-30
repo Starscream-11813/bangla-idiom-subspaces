@@ -1,0 +1,132 @@
+{
+ "created_utc": "2026-10-26T04:32:48.658709+00:00",
+ "results": "REPO/new_experiments2/results",
+ "x7_reference": "REPO/new_experiments/results/X7_alignment",
+ "experiments": {
+  "X10_heldout_alignment": {
+   "status": "passed",
+   "created": "2026-10-26T04:32:47.208077+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X10_heldout_alignment/retrieval.csv has rows",
+     "passed": true,
+     "detail": "1296 rows",
+     "level": "error"
+    },
+    {
+     "check": "X10_heldout_alignment/procrustes_fit.csv has rows",
+     "passed": true,
+     "detail": "324 rows",
+     "level": "error"
+    },
+    {
+     "check": "X10_heldout_alignment/aligned.csv has rows",
+     "passed": true,
+     "detail": "504 rows",
+     "level": "error"
+    },
+    {
+     "check": "X10_heldout_alignment/summary.csv has rows",
+     "passed": true,
+     "detail": "60 rows",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted shared_dims_unaligned reproduces X7 (max |diff| <= 0.001)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted shared_dims_aligned reproduces X7 (max |diff| <= 0.01)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted ambient_acc reproduces X7 (max |diff| <= 0.002)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted SSI_published_cross_acc reproduces X7 (max |diff| <= 0.03)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted aligned_cross_acc reproduces X7 (max |diff| <= 0.005)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted SSI_aligned_cross_acc reproduces X7 (max |diff| <= 0.03)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted aligned_zero_shot_acc reproduces X7 (max |diff| <= 0.005)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted erase_aligned_drop_pp reproduces X7 (max |diff| <= 0.5)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted erase_unaligned_drop_pp reproduces X7 (max |diff| <= 0.5)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted erase_native_drop_pp reproduces X7 (max |diff| <= 0.5)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: unmapped and SPACE-mapped retrieval reproduce X7",
+     "passed": true,
+     "detail": "max |top1 diff| = 0.0000 over 432 rows",
+     "level": "error"
+    },
+    {
+     "check": "X7: centred NN retrieval reproduces the published S3 baselines",
+     "passed": true,
+     "detail": "max |top1 diff| = 0.0000 over 30 rows; identical n: True",
+     "level": "error"
+    },
+    {
+     "check": "X10_heldout_alignment/aligned.csv: probe_converged_aligned >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    },
+    {
+     "check": "X10_heldout_alignment/aligned.csv: probe_converged_zero_shot >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,13 @@
+model,split,target,items,packet_items,F_matches_packet
+bert-base-multilingual-cased,0,bn-fig,257,300,True
+bert-base-multilingual-cased,0,bn-idiom,300,300,True
+csebuetnlp/banglabert,0,bn-fig,257,300,True
+csebuetnlp/banglabert,0,bn-idiom,300,300,True
+csebuetnlp/banglishbert,0,bn-fig,257,300,True
+csebuetnlp/banglishbert,0,bn-idiom,300,300,True
+google/muril-large-cased,0,bn-fig,257,300,True
+google/muril-large-cased,0,bn-idiom,300,300,True
+setu4993/LaBSE,0,bn-fig,257,300,True
+setu4993/LaBSE,0,bn-idiom,300,300,True
+xlm-roberta-large,0,bn-fig,257,300,True
+xlm-roberta-large,0,bn-idiom,300,300,True

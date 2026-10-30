@@ -1,0 +1,6 @@
+{
+  "frozen_at_utc": "2026-10-21T12:33:07.924319+00:00",
+  "plan_sha256": "ce0f7479708bff14480a021a9a77e3337b00ae8a78bca44ce9cc8abca05bbd60",
+  "script_sha256": "cf270bdd81fdd994864a45f39c344c5b6a547b9e152832d45c6720f788e8f333",
+  "status": "post_hoc_exploratory_validation_only_selection"
+}

@@ -1,0 +1,4 @@
+split,method,tests,spearman_SSI_acc_bal,spearman_SSI_acc_f1,rejections_RAND_acc,rejections_RAND_bal,rejections_RAND_f1,rejections_PERM_acc,rejections_PERM_bal,rejections_PERM_f1
+0,COV,12,0.8671328671328673,0.7832167832167832,11,12,12,9,12,12
+0,MLR,12,0.5034965034965035,0.7342657342657343,4,7,6,6,8,8
+1,COV,12,0.9790209790209792,0.9370629370629372,12,12,12,12,12,12

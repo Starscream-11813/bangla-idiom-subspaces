@@ -1,0 +1,3 @@
+-r requirements.txt
+# Optional Linux/CUDA 4-bit decoder loading. Keep Kaggle's CUDA-compatible torch.
+bitsandbytes>=0.45,<1

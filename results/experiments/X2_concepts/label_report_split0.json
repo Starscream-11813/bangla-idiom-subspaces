@@ -1,0 +1,535 @@
+{
+ "DOM": {
+  "concept": "DOM",
+  "rule": "most frequent retained SPACE usage-domain tag; register descriptors removed",
+  "generic_pattern": "\\b(conversation|conversations|conversational|colloquial|informal|everyday|daily|casual|speech|language|communication|descriptive|description|general|social interactions?|social)\\b",
+  "k": 12,
+  "classes": [
+   {
+    "label": 0,
+    "tag": "literature",
+    "space_records": 529
+   },
+   {
+    "label": 1,
+    "tag": "emotions",
+    "space_records": 219
+   },
+   {
+    "label": 2,
+    "tag": "politics",
+    "space_records": 217
+   },
+   {
+    "label": 3,
+    "tag": "family",
+    "space_records": 193
+   },
+   {
+    "label": 4,
+    "tag": "relationships",
+    "space_records": 135
+   },
+   {
+    "label": 5,
+    "tag": "religion",
+    "space_records": 121
+   },
+   {
+    "label": 6,
+    "tag": "finance",
+    "space_records": 112
+   },
+   {
+    "label": 7,
+    "tag": "criticism",
+    "space_records": 107
+   },
+   {
+    "label": 8,
+    "tag": "business",
+    "space_records": 99
+   },
+   {
+    "label": 9,
+    "tag": "education",
+    "space_records": 92
+   },
+   {
+    "label": 10,
+    "tag": "emotional expression",
+    "space_records": 68
+   },
+   {
+    "label": 11,
+    "tag": "health",
+    "space_records": 65
+   }
+  ],
+  "most_frequent_dropped_tags": [
+   {
+    "tag": "everyday conversation",
+    "space_records": 1326
+   },
+   {
+    "tag": "daily conversation",
+    "space_records": 511
+   },
+   {
+    "tag": "daily life",
+    "space_records": 344
+   },
+   {
+    "tag": "colloquial",
+    "space_records": 324
+   },
+   {
+    "tag": "social interactions",
+    "space_records": 229
+   },
+   {
+    "tag": "social commentary",
+    "space_records": 139
+   },
+   {
+    "tag": "conversation",
+    "space_records": 125
+   },
+   {
+    "tag": "personality description",
+    "space_records": 81
+   },
+   {
+    "tag": "conversational",
+    "space_records": 74
+   },
+   {
+    "tag": "informal conversation",
+    "space_records": 61
+   },
+   {
+    "tag": "colloquial speech",
+    "space_records": 60
+   },
+   {
+    "tag": "everyday language",
+    "space_records": 54
+   },
+   {
+    "tag": "descriptive",
+    "space_records": 50
+   },
+   {
+    "tag": "social",
+    "space_records": 50
+   },
+   {
+    "tag": "informal speech",
+    "space_records": 40
+   },
+   {
+    "tag": "social interaction",
+    "space_records": 37
+   },
+   {
+    "tag": "descriptive language",
+    "space_records": 32
+   },
+   {
+    "tag": "communication",
+    "space_records": 29
+   },
+   {
+    "tag": "physical description",
+    "space_records": 29
+   },
+   {
+    "tag": "social criticism",
+    "space_records": 28
+   },
+   {
+    "tag": "everyday speech",
+    "space_records": 26
+   },
+   {
+    "tag": "social gatherings",
+    "space_records": 24
+   },
+   {
+    "tag": "character description",
+    "space_records": 23
+   },
+   {
+    "tag": "description",
+    "space_records": 18
+   },
+   {
+    "tag": "colloquial insults",
+    "space_records": 17
+   }
+  ],
+  "labelled_records": 4146,
+  "records": 10359,
+  "records_with_several_retained_tags": 702,
+  "by_split": {
+   "probe": {
+    "records": 2590,
+    "labelled": 1061,
+    "classes": 12,
+    "counts": {
+     "0": 392,
+     "1": 77,
+     "2": 125,
+     "3": 107,
+     "4": 50,
+     "5": 58,
+     "6": 51,
+     "7": 36,
+     "8": 36,
+     "9": 53,
+     "10": 33,
+     "11": 43
+    },
+    "majority_share": 0.3694627709707823
+   },
+   "space": {
+    "records": 4143,
+    "labelled": 1660,
+    "classes": 12,
+    "counts": {
+     "0": 529,
+     "1": 174,
+     "2": 197,
+     "3": 170,
+     "4": 73,
+     "5": 105,
+     "6": 103,
+     "7": 89,
+     "8": 53,
+     "9": 66,
+     "10": 51,
+     "11": 50
+    },
+    "majority_share": 0.31867469879518073
+   },
+   "test": {
+    "records": 2590,
+    "labelled": 1018,
+    "classes": 12,
+    "counts": {
+     "0": 325,
+     "1": 102,
+     "2": 119,
+     "3": 92,
+     "4": 62,
+     "5": 51,
+     "6": 108,
+     "7": 40,
+     "8": 22,
+     "9": 42,
+     "10": 26,
+     "11": 29
+    },
+    "majority_share": 0.3192534381139489
+   },
+   "validation": {
+    "records": 1036,
+    "labelled": 407,
+    "classes": 12,
+    "counts": {
+     "0": 162,
+     "1": 28,
+     "2": 50,
+     "3": 27,
+     "4": 21,
+     "5": 24,
+     "6": 17,
+     "7": 27,
+     "8": 16,
+     "9": 17,
+     "10": 6,
+     "11": 12
+    },
+    "majority_share": 0.39803439803439805
+   }
+  },
+  "agreement": {
+   "AMI(DOM,F)_space": 0.17555689221858553,
+   "AMI(DOM,S)_space": 0.043867504592253886
+  }
+ },
+ "FBN": {
+  "concept": "FBN",
+  "backend": "nllb",
+  "embedder": {
+   "model": "facebook/nllb-200-distilled-600M",
+   "resolved_revision": "f8d333a098d19b4fd9a8b18f94170487ad3f821d"
+  },
+  "k": 12,
+  "seed": 0,
+  "training_records": 4143,
+  "unique_glosses": 10039,
+  "missing_or_non_bengali_glosses": 0,
+  "reseed_ARI_space": [
+   0.48451553514570556,
+   0.5291542646285965,
+   0.4188868995981346
+  ],
+  "cluster_keywords_bn": [
+   {
+    "label": 0,
+    "space_records": 536,
+    "keywords": [
+     "করা",
+     "না",
+     "করে",
+     "কাজ",
+     "যে",
+     "হওয়া",
+     "জন্য",
+     "হয়"
+    ]
+   },
+   {
+    "label": 1,
+    "space_records": 398,
+    "keywords": [
+     "ব্যক্তি",
+     "লোক",
+     "অত্যন্ত",
+     "অতি",
+     "বিদ্রুপে",
+     "ও",
+     "এমন",
+     "অপদার্থ"
+    ]
+   },
+   {
+    "label": 2,
+    "space_records": 261,
+    "keywords": [
+     "করা",
+     "বা",
+     "দেওয়া",
+     "বিদ্রুপে",
+     "হওয়া",
+     "কথা",
+     "প্রতারণা",
+     "করে"
+    ]
+   },
+   {
+    "label": 3,
+    "space_records": 370,
+    "keywords": [
+     "না",
+     "নয়",
+     "অতি",
+     "বা",
+     "কোন",
+     "খুব",
+     "কিছু",
+     "কথা"
+    ]
+   },
+   {
+    "label": 4,
+    "space_records": 235,
+    "keywords": [
+     "হওয়া",
+     "করা",
+     "বা",
+     "প্রকাশ",
+     "ক্রোধ",
+     "অতিশয়",
+     "অত্যন্ত",
+     "উত্ত্যক্ত"
+    ]
+   },
+   {
+    "label": 5,
+    "space_records": 527,
+    "keywords": [
+     "করা",
+     "হওয়া",
+     "দেওয়া",
+     "যাওয়া",
+     "পাওয়া",
+     "পলায়ন",
+     "আশ্রয়",
+     "কাজ"
+    ]
+   },
+   {
+    "label": 6,
+    "space_records": 221,
+    "keywords": [
+     "করা",
+     "বিপদে",
+     "বিপদ",
+     "অবস্থা",
+     "হওয়া",
+     "বিপদের",
+     "ব্যক্তি",
+     "সর্বনাশ"
+    ]
+   },
+   {
+    "label": 7,
+    "space_records": 334,
+    "keywords": [
+     "গালিবিশেষ",
+     "ব্যঙ্গার্থে",
+     "বা",
+     "ব্যক্তি",
+     "কৃপণ",
+     "শ্রীকৃষ্ণ",
+     "ব্যঙ্গে",
+     "ব্রাহ্মণ"
+    ]
+   },
+   {
+    "label": 8,
+    "space_records": 82,
+    "keywords": [
+     "নির্বোধ",
+     "মূর্খ",
+     "বুদ্ধিহীন",
+     "বোকা",
+     "মহামূর্খ",
+     "নিরেট",
+     "আকাট",
+     "লোক"
+    ]
+   },
+   {
+    "label": 9,
+    "space_records": 391,
+    "keywords": [
+     "করা",
+     "বা",
+     "মত",
+     "এমন",
+     "দিয়ে",
+     "করে",
+     "অনুরূপ",
+     "ও"
+    ]
+   },
+   {
+    "label": 10,
+    "space_records": 347,
+    "keywords": [
+     "ব্যক্তি",
+     "লোক",
+     "নারী",
+     "অতি",
+     "সন্তান",
+     "বা",
+     "ছেলে",
+     "অভিজ্ঞ"
+    ]
+   },
+   {
+    "label": 11,
+    "space_records": 441,
+    "keywords": [
+     "বা",
+     "ও",
+     "করা",
+     "ইত্যাদি",
+     "হওয়া",
+     "যুগ্মশব্দ",
+     "একার্থক",
+     "দেওয়া"
+    ]
+   }
+  ],
+  "by_split": {
+   "probe": {
+    "records": 2590,
+    "labelled": 2590,
+    "classes": 12,
+    "counts": {
+     "0": 355,
+     "1": 239,
+     "2": 149,
+     "3": 288,
+     "4": 118,
+     "5": 369,
+     "6": 135,
+     "7": 160,
+     "8": 31,
+     "9": 237,
+     "10": 174,
+     "11": 335
+    },
+    "majority_share": 0.14247104247104247
+   },
+   "space": {
+    "records": 4143,
+    "labelled": 4143,
+    "classes": 12,
+    "counts": {
+     "0": 536,
+     "1": 398,
+     "2": 261,
+     "3": 370,
+     "4": 235,
+     "5": 527,
+     "6": 221,
+     "7": 334,
+     "8": 82,
+     "9": 391,
+     "10": 347,
+     "11": 441
+    },
+    "majority_share": 0.129374849143133
+   },
+   "test": {
+    "records": 2590,
+    "labelled": 2590,
+    "classes": 12,
+    "counts": {
+     "0": 439,
+     "1": 165,
+     "2": 146,
+     "3": 258,
+     "4": 128,
+     "5": 442,
+     "6": 109,
+     "7": 182,
+     "8": 24,
+     "9": 274,
+     "10": 158,
+     "11": 265
+    },
+    "majority_share": 0.17065637065637065
+   },
+   "validation": {
+    "records": 1036,
+    "labelled": 1036,
+    "classes": 12,
+    "counts": {
+     "0": 144,
+     "1": 84,
+     "2": 70,
+     "3": 126,
+     "4": 56,
+     "5": 128,
+     "6": 48,
+     "7": 81,
+     "8": 4,
+     "9": 95,
+     "10": 90,
+     "11": 110
+    },
+    "majority_share": 0.138996138996139
+   }
+  },
+  "agreement": {
+   "AMI(FBN,F)_space": 0.18543646224030635,
+   "AMI(FBN,S)_space": 0.0686822920238672
+  }
+ }
+}

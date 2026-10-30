@@ -1,0 +1,668 @@
+{
+ "split": 0,
+ "reproduction": {
+  "records": 10357,
+  "agreement": 1.0,
+  "ARI": 1.0
+ },
+ "reseeded": {
+  "F1": {
+   "seed": 1,
+   "ARI_with_F_space": 0.5153894096760734,
+   "by_split": {
+    "probe": {
+     "records": 2590,
+     "labelled": 2588,
+     "classes": 12,
+     "counts": {
+      "0": 180,
+      "1": 212,
+      "2": 140,
+      "3": 74,
+      "4": 205,
+      "5": 191,
+      "6": 471,
+      "7": 276,
+      "8": 206,
+      "9": 308,
+      "10": 135,
+      "11": 190
+     },
+     "majority_share": 0.18199381761978362
+    },
+    "space": {
+     "records": 4143,
+     "labelled": 4143,
+     "classes": 12,
+     "counts": {
+      "0": 286,
+      "1": 413,
+      "2": 258,
+      "3": 149,
+      "4": 468,
+      "5": 358,
+      "6": 607,
+      "7": 357,
+      "8": 319,
+      "9": 372,
+      "10": 252,
+      "11": 304
+     },
+     "majority_share": 0.14651218923485396
+    },
+    "test": {
+     "records": 2590,
+     "labelled": 2590,
+     "classes": 12,
+     "counts": {
+      "0": 218,
+      "1": 275,
+      "2": 173,
+      "3": 84,
+      "4": 166,
+      "5": 202,
+      "6": 422,
+      "7": 321,
+      "8": 140,
+      "9": 220,
+      "10": 195,
+      "11": 174
+     },
+     "majority_share": 0.16293436293436295
+    },
+    "validation": {
+     "records": 1036,
+     "labelled": 1036,
+     "classes": 12,
+     "counts": {
+      "0": 86,
+      "1": 77,
+      "2": 82,
+      "3": 25,
+      "4": 75,
+      "5": 78,
+      "6": 203,
+      "7": 81,
+      "8": 92,
+      "9": 87,
+      "10": 68,
+      "11": 82
+     },
+     "majority_share": 0.19594594594594594
+    }
+   }
+  },
+  "F2": {
+   "seed": 2,
+   "ARI_with_F_space": 0.478576279349954,
+   "by_split": {
+    "probe": {
+     "records": 2590,
+     "labelled": 2588,
+     "classes": 12,
+     "counts": {
+      "0": 214,
+      "1": 229,
+      "2": 296,
+      "3": 129,
+      "4": 407,
+      "5": 169,
+      "6": 142,
+      "7": 232,
+      "8": 230,
+      "9": 206,
+      "10": 214,
+      "11": 120
+     },
+     "majority_share": 0.15726429675425038
+    },
+    "space": {
+     "records": 4143,
+     "labelled": 4143,
+     "classes": 12,
+     "counts": {
+      "0": 325,
+      "1": 378,
+      "2": 399,
+      "3": 230,
+      "4": 543,
+      "5": 312,
+      "6": 264,
+      "7": 370,
+      "8": 330,
+      "9": 331,
+      "10": 325,
+      "11": 336
+     },
+     "majority_share": 0.13106444605358436
+    },
+    "test": {
+     "records": 2590,
+     "labelled": 2590,
+     "classes": 12,
+     "counts": {
+      "0": 262,
+      "1": 134,
+      "2": 345,
+      "3": 184,
+      "4": 385,
+      "5": 197,
+      "6": 169,
+      "7": 223,
+      "8": 169,
+      "9": 232,
+      "10": 180,
+      "11": 110
+     },
+     "majority_share": 0.14864864864864866
+    },
+    "validation": {
+     "records": 1036,
+     "labelled": 1036,
+     "classes": 12,
+     "counts": {
+      "0": 108,
+      "1": 105,
+      "2": 78,
+      "3": 63,
+      "4": 191,
+      "5": 70,
+      "6": 49,
+      "7": 79,
+      "8": 75,
+      "9": 92,
+      "10": 77,
+      "11": 49
+     },
+     "majority_share": 0.18436293436293436
+    }
+   }
+  },
+  "F3": {
+   "seed": 3,
+   "ARI_with_F_space": 0.6341996394286276,
+   "by_split": {
+    "probe": {
+     "records": 2590,
+     "labelled": 2588,
+     "classes": 12,
+     "counts": {
+      "0": 483,
+      "1": 176,
+      "2": 75,
+      "3": 170,
+      "4": 181,
+      "5": 306,
+      "6": 298,
+      "7": 263,
+      "8": 135,
+      "9": 136,
+      "10": 189,
+      "11": 176
+     },
+     "majority_share": 0.1866306027820711
+    },
+    "space": {
+     "records": 4143,
+     "labelled": 4143,
+     "classes": 12,
+     "counts": {
+      "0": 640,
+      "1": 307,
+      "2": 146,
+      "3": 273,
+      "4": 343,
+      "5": 363,
+      "6": 388,
+      "7": 492,
+      "8": 212,
+      "9": 253,
+      "10": 386,
+      "11": 340
+     },
+     "majority_share": 0.1544774318126961
+    },
+    "test": {
+     "records": 2590,
+     "labelled": 2590,
+     "classes": 12,
+     "counts": {
+      "0": 443,
+      "1": 199,
+      "2": 85,
+      "3": 163,
+      "4": 209,
+      "5": 211,
+      "6": 339,
+      "7": 180,
+      "8": 155,
+      "9": 199,
+      "10": 213,
+      "11": 194
+     },
+     "majority_share": 0.17104247104247106
+    },
+    "validation": {
+     "records": 1036,
+     "labelled": 1036,
+     "classes": 12,
+     "counts": {
+      "0": 210,
+      "1": 95,
+      "2": 25,
+      "3": 78,
+      "4": 81,
+      "5": 83,
+      "6": 87,
+      "7": 100,
+      "8": 52,
+      "9": 69,
+      "10": 97,
+      "11": 59
+     },
+     "majority_share": 0.20270270270270271
+    }
+   }
+  }
+ },
+ "TAG": {
+  "concept": "TAG",
+  "embedder": {
+   "backend": "sentence-transformers",
+   "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+   "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "k": 12,
+  "seed": 0,
+  "training_records": 3671,
+  "labelled_records": 9211,
+  "records": 10359,
+  "reseed_ARI_space": [
+   0.609384245762324,
+   0.5962759614243874,
+   0.6137917509317423
+  ],
+  "non_semantic_pattern": "\\b(figurative|idioms?|idiomatic|proverbs?|proverbial|sayings?|expressions?|phrases?|metaphors?|metaphorical|similes?|colloquial\\w*|informal|slang|speech|conversation\\w*|onomatopoe\\w*|reduplicat\\w*|rhym\\w*|alliteration|poetic|literary|literature|traditional|negative|positive|neutral|connotations?|usage|common|everyday|daily)\\b",
+  "most_frequent_removed_tags": [
+   {
+    "tag": "figurative",
+    "records": 376
+   },
+   {
+    "tag": "colloquial",
+    "records": 283
+   },
+   {
+    "tag": "negative",
+    "records": 270
+   },
+   {
+    "tag": "informal",
+    "records": 175
+   },
+   {
+    "tag": "onomatopoeia",
+    "records": 173
+   },
+   {
+    "tag": "proverbial",
+    "records": 159
+   },
+   {
+    "tag": "animal metaphor",
+    "records": 159
+   },
+   {
+    "tag": "speech",
+    "records": 133
+   },
+   {
+    "tag": "idiom",
+    "records": 120
+   },
+   {
+    "tag": "proverb",
+    "records": 102
+   },
+   {
+    "tag": "negative trait",
+    "records": 101
+   },
+   {
+    "tag": "onomatopoeic",
+    "records": 92
+   },
+   {
+    "tag": "traditional",
+    "records": 91
+   },
+   {
+    "tag": "reduplication",
+    "records": 90
+   },
+   {
+    "tag": "positive",
+    "records": 83
+   },
+   {
+    "tag": "slang",
+    "records": 72
+   },
+   {
+    "tag": "metaphor",
+    "records": 70
+   },
+   {
+    "tag": "poetic",
+    "records": 62
+   },
+   {
+    "tag": "ব্যঙ্গ",
+    "records": 60
+   },
+   {
+    "tag": "proverbial expression",
+    "records": 52
+   },
+   {
+    "tag": "everyday language",
+    "records": 51
+   },
+   {
+    "tag": "literary",
+    "records": 48
+   },
+   {
+    "tag": "figurative expression",
+    "records": 48
+   },
+   {
+    "tag": "negative connotation",
+    "records": 47
+   },
+   {
+    "tag": "expression",
+    "records": 46
+   },
+   {
+    "tag": "bengali idiom",
+    "records": 45
+   },
+   {
+    "tag": "বাগধারা",
+    "records": 42
+   },
+   {
+    "tag": "বিদ্রুপ",
+    "records": 42
+   },
+   {
+    "tag": "প্রবাদ",
+    "records": 37
+   },
+   {
+    "tag": "negative emotion",
+    "records": 35
+   }
+  ],
+  "cluster_tags": [
+   {
+    "label": 0,
+    "space_records": 270,
+    "top_tags": [
+     "arrogance",
+     "flattery",
+     "hypocrisy",
+     "pride",
+     "foolishness",
+     "boasting",
+     "sycophancy",
+     "sarcasm"
+    ]
+   },
+   {
+    "label": 1,
+    "space_records": 304,
+    "top_tags": [
+     "poverty",
+     "money",
+     "wealth",
+     "greed",
+     "livelihood",
+     "hardship",
+     "market",
+     "generosity"
+    ]
+   },
+   {
+    "label": 2,
+    "space_records": 374,
+    "top_tags": [
+     "affection",
+     "appearance",
+     "beauty",
+     "love",
+     "youth",
+     "descriptive",
+     "maturity",
+     "age"
+    ]
+   },
+   {
+    "label": 3,
+    "space_records": 294,
+    "top_tags": [
+     "folklore",
+     "mythology",
+     "mythological",
+     "hinduism",
+     "mythological reference",
+     "women",
+     "bengali folklore",
+     "sanskrit origin"
+    ]
+   },
+   {
+    "label": 4,
+    "space_records": 329,
+    "top_tags": [
+     "caution",
+     "effort",
+     "laziness",
+     "avoidance",
+     "futility",
+     "urgency",
+     "stubbornness",
+     "procrastination"
+    ]
+   },
+   {
+    "label": 5,
+    "space_records": 213,
+    "top_tags": [
+     "deception",
+     "cunning",
+     "hypocrisy",
+     "deceit",
+     "trickery",
+     "secrecy",
+     "mischief",
+     "fraud"
+    ]
+   },
+   {
+    "label": 6,
+    "space_records": 350,
+    "top_tags": [
+     "punishment",
+     "violence",
+     "mischief",
+     "aggression",
+     "quarrel",
+     "threat",
+     "authority",
+     "oppression"
+    ]
+   },
+   {
+    "label": 7,
+    "space_records": 125,
+    "top_tags": [
+     "rural life",
+     "rural imagery",
+     "rural",
+     "foolishness",
+     "deception",
+     "rural origin",
+     "rural folklore",
+     "misfortune"
+    ]
+   },
+   {
+    "label": 8,
+    "space_records": 592,
+    "top_tags": [
+     "quantity",
+     "time",
+     "formal",
+     "confusion",
+     "completeness",
+     "movement",
+     "loanword",
+     "abundance"
+    ]
+   },
+   {
+    "label": 9,
+    "space_records": 316,
+    "top_tags": [
+     "danger",
+     "misfortune",
+     "superstition",
+     "destruction",
+     "fate",
+     "death",
+     "escape",
+     "fortune"
+    ]
+   },
+   {
+    "label": 10,
+    "space_records": 283,
+    "top_tags": [
+     "emotion",
+     "anger",
+     "irritation",
+     "annoyance",
+     "anxiety",
+     "restlessness",
+     "fear",
+     "discomfort"
+    ]
+   },
+   {
+    "label": 11,
+    "space_records": 221,
+    "top_tags": [
+     "derogatory",
+     "insult",
+     "sarcasm",
+     "foolishness",
+     "mockery",
+     "criticism",
+     "irony",
+     "annoyance"
+    ]
+   }
+  ],
+  "by_split": {
+   "probe": {
+    "records": 2590,
+    "labelled": 2279,
+    "classes": 12,
+    "counts": {
+     "0": 141,
+     "1": 163,
+     "2": 221,
+     "3": 237,
+     "4": 263,
+     "5": 93,
+     "6": 178,
+     "7": 81,
+     "8": 423,
+     "9": 231,
+     "10": 153,
+     "11": 95
+    },
+    "majority_share": 0.18560772268538833
+   },
+   "space": {
+    "records": 4143,
+    "labelled": 3671,
+    "classes": 12,
+    "counts": {
+     "0": 270,
+     "1": 304,
+     "2": 374,
+     "3": 294,
+     "4": 329,
+     "5": 213,
+     "6": 350,
+     "7": 125,
+     "8": 592,
+     "9": 316,
+     "10": 283,
+     "11": 221
+    },
+    "majority_share": 0.16126396077363117
+   },
+   "test": {
+    "records": 2590,
+    "labelled": 2336,
+    "classes": 12,
+    "counts": {
+     "0": 132,
+     "1": 198,
+     "2": 222,
+     "3": 193,
+     "4": 293,
+     "5": 118,
+     "6": 207,
+     "7": 69,
+     "8": 440,
+     "9": 176,
+     "10": 180,
+     "11": 108
+    },
+    "majority_share": 0.18835616438356165
+   },
+   "validation": {
+    "records": 1036,
+    "labelled": 925,
+    "classes": 12,
+    "counts": {
+     "0": 38,
+     "1": 72,
+     "2": 106,
+     "3": 83,
+     "4": 89,
+     "5": 60,
+     "6": 93,
+     "7": 28,
+     "8": 177,
+     "9": 76,
+     "10": 52,
+     "11": 51
+    },
+    "majority_share": 0.19135135135135134
+   }
+  },
+  "agreement": {
+   "AMI(TAG,F)_space": 0.1934980684303329,
+   "AMI(TAG,S)_space": 0.10495224782573004,
+   "AMI(TAG,DOM)_space": 0.1649091991942727
+  },
+  "ARI_with_F_space": 0.1251027297863703,
+  "AMI_with_F_space": 0.19349806843033143
+ }
+}

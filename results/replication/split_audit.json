@@ -1,0 +1,265 @@
+{
+  "mode": "input_disjoint",
+  "records": 10359,
+  "components": 4816,
+  "largest_component": 901,
+  "largest_fraction": 0.08697750748141712,
+  "largest_component_sizes": [
+    901,
+    223,
+    115,
+    94,
+    87,
+    77,
+    60,
+    55,
+    52,
+    41,
+    41,
+    33,
+    32,
+    32,
+    29,
+    29,
+    28,
+    27,
+    27,
+    26
+  ],
+  "requested_fractions": {
+    "space": 0.4,
+    "probe": 0.25,
+    "validation": 0.1,
+    "test": 0.25
+  },
+  "seed": 1,
+  "counterpart_disjoint": false,
+  "input_disjoint": true,
+  "form_variant_links": 262,
+  "linking_keys": "Bangla type (whitespace/hyphen/joiner-insensitive) + listed form variants + identical example/gloss/probed-counterpart inputs",
+  "cross_split_identical_inputs": 0,
+  "identical_input_examples": {},
+  "counts": {
+    "space": 4143,
+    "probe": 2590,
+    "validation": 1036,
+    "test": 2590
+  },
+  "achieved_fractions": {
+    "space": 0.3999420793512887,
+    "probe": 0.2500241336036297,
+    "validation": 0.10000965344145188,
+    "test": 0.2500241336036297
+  },
+  "max_fraction_deviation": 5.7920648711295986e-05,
+  "overlapping_counterparts": 1800,
+  "counterpart_overlap_examples": {
+    "a bad egg": [
+      "probe",
+      "test"
+    ],
+    "a big fish in a small pond": [
+      "probe",
+      "space"
+    ],
+    "a bit": [
+      "space",
+      "test"
+    ],
+    "a bitter pill to swallow": [
+      "space",
+      "validation"
+    ],
+    "a bolt from the blue": [
+      "probe",
+      "test"
+    ],
+    "a bunch": [
+      "space",
+      "validation"
+    ],
+    "a burnt child dreads the fire": [
+      "space",
+      "test"
+    ],
+    "a couple": [
+      "space",
+      "test"
+    ],
+    "a diamond in the rough": [
+      "probe",
+      "space"
+    ],
+    "a dime a dozen": [
+      "probe",
+      "space",
+      "test"
+    ],
+    "a done deal": [
+      "probe",
+      "test"
+    ],
+    "a dream come true": [
+      "probe",
+      "space"
+    ],
+    "a drop in the bucket": [
+      "probe",
+      "space",
+      "test"
+    ],
+    "a drop in the ocean": [
+      "probe",
+      "test"
+    ],
+    "a dud": [
+      "probe",
+      "space"
+    ],
+    "a few": [
+      "space",
+      "test"
+    ],
+    "a fish out of water": [
+      "probe",
+      "space",
+      "test"
+    ],
+    "a fly in the ointment": [
+      "space",
+      "test"
+    ],
+    "a fool and his money are soon parted": [
+      "space",
+      "test"
+    ],
+    "a fool's errand": [
+      "probe",
+      "space",
+      "validation"
+    ]
+  },
+  "split_component_counts": {
+    "space": 1914,
+    "probe": 1209,
+    "test": 1209,
+    "validation": 484
+  },
+  "giant_component_id": "component_a717a5e7741555259088",
+  "giant_component_split": "space",
+  "coverage_warning": "",
+  "idiom_grouping": "whitespace/hyphen/joiner-insensitive normalized primary spelling plus listed form variants",
+  "spelling_variant_groups": 92,
+  "spelling_variant_rows": 212,
+  "cross_split_spelling_variant_groups": 0,
+  "cross_split_form_variant_pairs": 0,
+  "alias_audit": {
+    "supplied_entries": 4321,
+    "semantic_alternatives_not_linked": 4049,
+    "form_variant_entries": 262,
+    "spelling_equivalent_entries": 10,
+    "policy": "spelling-equivalent forms and listed form variants (similarity >= 0.7) are linked; listed alternatives that are different idioms are not merged",
+    "unlinked_examples": [
+      {
+        "source_id": "1",
+        "alias": "ক খ",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "10001",
+        "alias": "হাঁসফাঁসানো",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "10001",
+        "alias": "আইঢাই করা",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "10001",
+        "alias": "ছটফট করা",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "10002",
+        "alias": "হাঁসুলি",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "10017",
+        "alias": "হা কপাল",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "1002",
+        "alias": "এককলসির জল",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "1002",
+        "alias": "এককুঁয়োর ব্যাঙ",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "1002",
+        "alias": "একগাঙের চিল",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "1002",
+        "alias": "একগাছের ছাল",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "1002",
+        "alias": "একপালকের পাখি",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "1002",
+        "alias": "একবাগানের ফুল",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "10038",
+        "alias": "কঙ্কালসার",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "10038",
+        "alias": "হাড়-জিরজিরে",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "1004",
+        "alias": "এককাট্টা",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "10041",
+        "alias": "হাড় ভাজা হওয়া",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "10043",
+        "alias": "হাড় কৃপণ",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "10045",
+        "alias": "তক্তা বানানো",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "10045",
+        "alias": "হাড়গোড় ভাঙ্গা",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      },
+      {
+        "source_id": "10045",
+        "alias": "হাড়মাস আলাদা করা",
+        "reason": "different_expression_or_not_a_corpus_entry"
+      }
+    ]
+  }
+}

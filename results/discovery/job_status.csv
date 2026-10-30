@@ -1,0 +1,14 @@
+phase,source,status,model,selected_layer
+primary,primary/xlm-roberta-large/split_0/labels_0/xlm-roberta-large/status.json,completed,xlm-roberta-large,24
+primary,primary/bert-base-multilingual-cased/split_0/labels_0/bert-base-multilingual-cased/status.json,completed,bert-base-multilingual-cased,12
+primary,primary/csebuetnlp_banglabert/split_0/labels_0/csebuetnlp_banglabert/status.json,completed,csebuetnlp/banglabert,9
+primary,primary/setu4993_LaBSE/split_0/labels_0/setu4993_LaBSE/status.json,completed,setu4993/LaBSE,6
+primary,primary/csebuetnlp_banglishbert/split_0/labels_0/csebuetnlp_banglishbert/status.json,completed,csebuetnlp/banglishbert,12
+primary,primary/google_muril-large-cased/split_0/labels_0/google_muril-large-cased/status.json,completed,google/muril-large-cased,12
+identity,identity/xlm-roberta-large/split_0/labels_0/xlm-roberta-large/status.json,completed,xlm-roberta-large,15
+identity,identity/bert-base-multilingual-cased/split_0/labels_0/bert-base-multilingual-cased/status.json,completed,bert-base-multilingual-cased,12
+identity,identity/csebuetnlp_banglabert/split_0/labels_0/csebuetnlp_banglabert/status.json,completed,csebuetnlp/banglabert,9
+identity,identity/setu4993_LaBSE/split_0/labels_0/setu4993_LaBSE/status.json,completed,setu4993/LaBSE,6
+identity,identity/csebuetnlp_banglishbert/split_0/labels_0/csebuetnlp_banglishbert/status.json,completed,csebuetnlp/banglishbert,6
+identity,identity/google_muril-large-cased/split_0/labels_0/google_muril-large-cased/status.json,completed,google/muril-large-cased,12
+decoder,decoder/split_0/labels_0/Qwen_Qwen3-8B/status.json,completed,Qwen/Qwen3-8B,16

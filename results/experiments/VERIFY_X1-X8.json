@@ -1,0 +1,378 @@
+{
+ "created_utc": "2026-10-24T05:26:38.696311+00:00",
+ "results": "REPO/new_experiments/results",
+ "experiments": {
+  "X1_zero_shot": {
+   "status": "passed",
+   "created": "2026-10-23T21:59:10.764639+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X1_zero_shot/summary.csv has rows",
+     "passed": true,
+     "detail": "360 rows",
+     "level": "error"
+    },
+    {
+     "check": "X1_zero_shot/summary.csv: zs_probe_converged >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    }
+   ]
+  },
+  "X2_concepts": {
+   "status": "passed",
+   "created": "2026-10-23T22:50:32.162584+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X2_concepts/tests.csv has rows",
+     "passed": true,
+     "detail": "24 rows",
+     "level": "error"
+    },
+    {
+     "check": "X2_concepts/ladder.csv has rows",
+     "passed": true,
+     "detail": "168 rows",
+     "level": "error"
+    },
+    {
+     "check": "X2_concepts/contrasts.csv has rows",
+     "passed": true,
+     "detail": "24 rows",
+     "level": "error"
+    },
+    {
+     "check": "X2_concepts/tests.csv: probe_converged_cross >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    },
+    {
+     "check": "X2_concepts/tests.csv: probe_converged_native >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    }
+   ]
+  },
+  "X3_leace_ablation": {
+   "status": "passed",
+   "created": "2026-10-23T22:09:08.743845+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0,
+    1
+   ],
+   "checks": [
+    {
+     "check": "X3_leace_ablation/summary.csv has rows",
+     "passed": true,
+     "detail": "3312 rows",
+     "level": "error"
+    },
+    {
+     "check": "X3 split 1: COV/AMBIENT readouts reproduce follow-up scores",
+     "passed": true,
+     "detail": "max |diff| = 0.0014 over 48 readouts",
+     "level": "error"
+    },
+    {
+     "check": "X3_leace_ablation/summary.csv: probe_converged >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    }
+   ]
+  },
+  "X4_pooling_matched": {
+   "status": "passed",
+   "created": "2026-10-23T23:34:32.848960+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X4_pooling_matched/extraction_check.csv has rows",
+     "passed": true,
+     "detail": "114 rows",
+     "level": "error"
+    },
+    {
+     "check": "X4_pooling_matched/cells.csv has rows",
+     "passed": true,
+     "detail": "96 rows",
+     "level": "error"
+    },
+    {
+     "check": "X4_pooling_matched/contrasts.csv has rows",
+     "passed": true,
+     "detail": "300 rows",
+     "level": "error"
+    },
+    {
+     "check": "X4_pooling_matched/tokens.csv has rows",
+     "passed": true,
+     "detail": "30 rows",
+     "level": "error"
+    },
+    {
+     "check": "X4: re-extracted features match the original cache (median cosine >= 0.999)",
+     "passed": true,
+     "detail": "lowest median cosine 1.000000; lowest minimum cosine 0.996591",
+     "level": "error"
+    },
+    {
+     "check": "X4: pooling validity agrees with the original cache",
+     "passed": true,
+     "detail": "lowest 1.0000",
+     "level": "error"
+    }
+   ]
+  },
+  "X5_balanced_metrics": {
+   "status": "passed",
+   "created": "2026-10-23T21:35:21.988194+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0,
+    1
+   ],
+   "checks": [
+    {
+     "check": "X5_balanced_metrics/tests.csv has rows",
+     "passed": true,
+     "detail": "36 rows",
+     "level": "error"
+    },
+    {
+     "check": "X5_balanced_metrics/agreement.csv has rows",
+     "passed": true,
+     "detail": "3 rows",
+     "level": "error"
+    },
+    {
+     "check": "X5_balanced_metrics/null_metrics.csv.gz has rows",
+     "passed": true,
+     "detail": "143928 rows",
+     "level": "error"
+    },
+    {
+     "check": "X5 split 0: cross accuracy reproduces published (max |diff| <= 0.005)",
+     "passed": true,
+     "detail": "max |diff| = 0.0009 over 12 tests",
+     "level": "error"
+    },
+    {
+     "check": "X5 split 0: accuracy SSI reproduces published (max |diff| <= 0.03)",
+     "passed": true,
+     "detail": "max |diff| = 0.0084",
+     "level": "error"
+    },
+    {
+     "check": "X5 split 0: RAND p<=.05 decisions agree with published",
+     "passed": true,
+     "detail": "agreement 1.00",
+     "level": "error"
+    },
+    {
+     "check": "X5 split 1: cross accuracy reproduces published (max |diff| <= 0.005)",
+     "passed": true,
+     "detail": "max |diff| = 0.0005 over 6 tests",
+     "level": "error"
+    },
+    {
+     "check": "X5 split 1: accuracy SSI reproduces published (max |diff| <= 0.03)",
+     "passed": true,
+     "detail": "max |diff| = 0.0019",
+     "level": "error"
+    },
+    {
+     "check": "X5 split 1: RAND p<=.05 decisions agree with published",
+     "passed": true,
+     "detail": "agreement 1.00",
+     "level": "error"
+    },
+    {
+     "check": "X5_balanced_metrics/tests.csv: probe_converged_cross >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    },
+    {
+     "check": "X5_balanced_metrics/tests.csv: probe_converged_native >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    }
+   ]
+  },
+  "X6_nonlinear_mdl": {
+   "status": "passed",
+   "created": "2026-10-23T23:26:05.148109+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X6_nonlinear_mdl/mlp.csv has rows",
+     "passed": true,
+     "detail": "300 rows",
+     "level": "error"
+    },
+    {
+     "check": "X6_nonlinear_mdl/mdl.csv has rows",
+     "passed": true,
+     "detail": "468 rows",
+     "level": "error"
+    },
+    {
+     "check": "X6_nonlinear_mdl/mdl_summary.csv has rows",
+     "passed": true,
+     "detail": "132 rows",
+     "level": "error"
+    }
+   ]
+  },
+  "X7_alignment": {
+   "status": "passed",
+   "created": "2026-10-23T22:13:31.767015+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X7_alignment/retrieval.csv has rows",
+     "passed": true,
+     "detail": "432 rows",
+     "level": "error"
+    },
+    {
+     "check": "X7_alignment/procrustes_fit.csv has rows",
+     "passed": true,
+     "detail": "108 rows",
+     "level": "error"
+    },
+    {
+     "check": "X7_alignment/aligned.csv has rows",
+     "passed": true,
+     "detail": "72 rows",
+     "level": "error"
+    },
+    {
+     "check": "X7: centred NN retrieval reproduces the published S3 baselines",
+     "passed": true,
+     "detail": "max |top1 diff| = 0.0000 over 30 rows; identical n: True",
+     "level": "error"
+    }
+   ]
+  },
+  "X8_layerwise": {
+   "status": "passed",
+   "created": "2026-10-23T22:28:24.342835+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X8_layerwise/layers.csv has rows",
+     "passed": true,
+     "detail": "228 rows",
+     "level": "error"
+    },
+    {
+     "check": "X8_layerwise/contrasts.csv has rows",
+     "passed": true,
+     "detail": "76 rows",
+     "level": "error"
+    },
+    {
+     "check": "X8_layerwise/summary.csv has rows",
+     "passed": true,
+     "detail": "36 rows",
+     "level": "error"
+    },
+    {
+     "check": "X8_layerwise/layers.csv: probe_converged_cross >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    },
+    {
+     "check": "X8_layerwise/layers.csv: probe_converged_native >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    }
+   ]
+  }
+ }
+}

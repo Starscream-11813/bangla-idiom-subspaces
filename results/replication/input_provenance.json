@@ -1,0 +1,127 @@
+{
+  "corpus_filename": "bagdhara_export_done_2026-03-01_010356.json",
+  "corpus_sha256": "9f370e6705185f0fdd349cb332571d3c8622954b1b8a1419d6bd482ec4c2a640",
+  "analysed_records": 10359,
+  "distinct_idiom_strings": 8877,
+  "dataset_license": "CC BY-SA 4.0",
+  "source": "https://www.kaggle.com/datasets/sakhadib/bangla-bagdhara",
+  "raw_corpus_redistributed": false,
+  "feature_caches": {
+    "xlm-roberta-large": {
+      "fingerprint": "6f84e1f67824047648890fc356b3871cb2d7c21db1c0bff3fc90c38c0f84f50a",
+      "resolved_revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+      "shape": [
+        81218,
+        9,
+        1024
+      ],
+      "layers": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21,
+        24
+      ],
+      "normalization": "none",
+      "normalizer_code_hash": null
+    },
+    "bert-base-multilingual-cased": {
+      "fingerprint": "8ee494aaeab92136bad6ba7390f052df52c33eb8fe3f2f8da246ae8fd824603b",
+      "resolved_revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+      "shape": [
+        81218,
+        5,
+        768
+      ],
+      "layers": [
+        0,
+        3,
+        6,
+        9,
+        12
+      ],
+      "normalization": "none",
+      "normalizer_code_hash": null
+    },
+    "csebuetnlp/banglabert": {
+      "fingerprint": "32a1a0c27f1bad8d23769e69bb259e40ee081a48def153f0970e51b44f4ee079",
+      "resolved_revision": "9ce791f330578f50da6bc52b54205166fb5d1c8c",
+      "shape": [
+        81218,
+        5,
+        768
+      ],
+      "layers": [
+        0,
+        3,
+        6,
+        9,
+        12
+      ],
+      "normalization": "csebuetnlp",
+      "normalizer_code_hash": "d4248754e8e1f98ea074cf699807e5423f7a16e7a8ef2c864f4e42bf3232081f"
+    },
+    "setu4993/LaBSE": {
+      "fingerprint": "e6b65ed74472e2045c9996f1c8dbeb7adef6d6c79fb8b19e06f452e499abdef8",
+      "resolved_revision": "5afa72968dfe068421082cbc30411073b15a6693",
+      "shape": [
+        81218,
+        5,
+        768
+      ],
+      "layers": [
+        0,
+        3,
+        6,
+        9,
+        12
+      ],
+      "normalization": "none",
+      "normalizer_code_hash": null
+    },
+    "csebuetnlp/banglishbert": {
+      "fingerprint": "18aa8f37731029f433c0a5f4c0bec530692cd5c40c0d98b874527915b3d28bce",
+      "resolved_revision": "88f2777acd65160b2a6c07e5ffef2d232daadf87",
+      "shape": [
+        81218,
+        5,
+        768
+      ],
+      "layers": [
+        0,
+        3,
+        6,
+        9,
+        12
+      ],
+      "normalization": "csebuetnlp",
+      "normalizer_code_hash": "d4248754e8e1f98ea074cf699807e5423f7a16e7a8ef2c864f4e42bf3232081f"
+    },
+    "google/muril-large-cased": {
+      "fingerprint": "badad35d0cee2cf06453f3ba0ed3501a974f50dca9107498ae7b51dc666c6c53",
+      "resolved_revision": "ace319f0d17524297957e249aff028b0b7357ab5",
+      "shape": [
+        81218,
+        9,
+        1024
+      ],
+      "layers": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21,
+        24
+      ],
+      "normalization": "none",
+      "normalizer_code_hash": null
+    }
+  }
+}

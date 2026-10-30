@@ -1,0 +1,52 @@
+{
+  "spearman": {
+    "COV_shared_dims~SSI": {
+      "rho": 0.6816283961978701,
+      "p": 2.9756310742958045e-10,
+      "n": 66,
+      "mean_within_model_rho": 0.5844960115543373
+    },
+    "COV_shared_dims~retrieval_MRR": {
+      "rho": 0.847995829254557,
+      "p": 2.630467588605678e-19,
+      "n": 66,
+      "mean_within_model_rho": 0.8518001150059749
+    },
+    "MLR_shared_dims~SSI": {
+      "rho": 0.580782576808122,
+      "p": 3.184194946000724e-07,
+      "n": 66,
+      "mean_within_model_rho": 0.5592280041749625
+    },
+    "MLR_shared_dims~retrieval_MRR": {
+      "rho": 0.5629097738980071,
+      "p": 8.662956874837663e-07,
+      "n": 66,
+      "mean_within_model_rho": 0.6485860708846044
+    },
+    "CKA~SSI": {
+      "rho": 0.5706978997372268,
+      "p": 5.641718804617479e-07,
+      "n": 66,
+      "mean_within_model_rho": 0.5761311043351497
+    },
+    "CKA~retrieval_MRR": {
+      "rho": 0.9303563632362554,
+      "p": 1.3806828444065537e-29,
+      "n": 66,
+      "mean_within_model_rho": 0.8760325021577223
+    }
+  },
+  "class_transfer_vs_neutral_share": {
+    "rho": 0.19090909090909092,
+    "p": 0.5739131682855215
+  },
+  "class_transfer_vs_transparency": {
+    "rho": 0.41818181818181827,
+    "p": 0.20057021703405067
+  },
+  "class_transfer_vs_size": {
+    "rho": -0.07289312761251283,
+    "p": 0.8313373778990623
+  }
+}

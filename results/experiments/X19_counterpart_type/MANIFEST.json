@@ -1,0 +1,111 @@
+{
+ "experiment": "X19_counterpart_type",
+ "created_utc": "2026-10-27T07:47:32.381294+00:00",
+ "campaign": "CAMPAIGN",
+ "followup": "CAMPAIGN/paper_followup_seed1_20261021",
+ "out": "CAMPAIGN/new_experiments3_20261027",
+ "models": [
+  "xlm-roberta-large",
+  "bert-base-multilingual-cased",
+  "setu4993/LaBSE",
+  "google/muril-large-cased",
+  "csebuetnlp/banglabert",
+  "csebuetnlp/banglishbert"
+ ],
+ "splits": [
+  0
+ ],
+ "options": {},
+ "code_sha256": {
+  "new_experiments3/experiments3/__init__.py": "fd2a77424d25042101c90c2d454f87f6134a40b98e4b0c512a89fec51335fc5d",
+  "new_experiments3/experiments3/common3.py": "5fffba8dbe8973bbba686e7a569e48057b32d25136b65bd52539cd402f00538c",
+  "new_experiments3/experiments3/matched.py": "88b519b11135c1e4157f592b3284bfb811d557fff26be733e1e7cb1b9afb9624",
+  "new_experiments3/experiments3/preflight3.py": "d83346d7c3ec4c1b6bc16034b44c868adbaf812b8ac183dc463acdfebbc0a9ed",
+  "new_experiments3/experiments3/verify3.py": "cb5497f023bbe67d28d23fdbcef14a9b5ddfc368f5fb6cb17dc3a83f574eaabe",
+  "new_experiments3/experiments3/x15_matched_nulls.py": "e098db625e932ed65aabe653e4157efc247c8ff6bd438ff12dfecc1b117d4b7d",
+  "new_experiments3/experiments3/x16_idiom_prospective.py": "f764cf198e68bfffd1290aea7592625b674fd42c7891b2ff47ef6b112c09fede",
+  "new_experiments3/experiments3/x17_human_items.py": "9adbd4b0a5cedad920187fb29c43e927def21e5f077274583566a4c0a1b46148",
+  "new_experiments3/experiments3/x18_refit_bootstrap.py": "9be75fc913fd6bd1b0c99b03d91d5f3421e2907ec45613fd203523596c66984c",
+  "new_experiments3/experiments3/x19_counterpart_type.py": "8200393affd42faf8f9851c6f532017d85de4a440a47eb05839b10f1f053816e",
+  "new_experiments3/run.py": "1ef5087b043586cb717ad99464eb4374adb9b645eb4040e176e712af662e8a3d",
+  "new_experiments3/PLAN_X16.json": "e423d9f21f2f718a94745e885851dec7c4a96eeccca8898b809fc6af1199fd5c",
+  "new_experiments/experiments/__init__.py": "f3af440e428c625659b30423bfb3a6d6609584212f06088e152cd29b93d86234",
+  "new_experiments/experiments/common.py": "4d86381ea5986db2cd06600c0e21a3a19d03a31c537e2045929fc99557efc51b",
+  "new_experiments/experiments/concepts.py": "00d86e46380b46e19d262eed8f9c6222882a87fc8b0e3a810eb4c99f00829fd7",
+  "new_experiments/experiments/metrics.py": "f1831497b8c175b017d03e10fb1c53d824dc24a4a57a374dcf7cd0c73a6088f8",
+  "new_experiments/experiments/nulls.py": "cd4d6f2248acf20e8e20da5fe46e0756a61881ed15cdeb7b53a8a2bedfca933f",
+  "new_experiments/experiments/preflight.py": "e35afafc3923c22023aed35bce7cd1f13fef2b38e1197b62cd6678307f09bb10",
+  "new_experiments/experiments/reference.py": "67a07630cf41759c215f80a57583e6cccf5302e09f6052e99e5d28ea12ba0138",
+  "new_experiments/experiments/verify.py": "aa93ab42b828201ec4836dacd132918bac2602c6a4ab6eac80681bb7d8f9ba61",
+  "new_experiments/experiments/x1_zero_shot.py": "798fdd0af6d6106603b28e17ed3432584e1c05fe9051a0206db84abb6bb234da",
+  "new_experiments/experiments/x2_concepts.py": "6268c7049f9564cf32c07b3b25b1c0488945ed9661f9a5168c3275a1e7fe131f",
+  "new_experiments/experiments/x3_leace.py": "0aef1af48ce75b889d9e8342f1de1efc14e2059754cd1ca85afa21d5ba1fd58c",
+  "new_experiments/experiments/x4_pooling.py": "ad8beef3f4a67c948912123b6c3c3421005e008503aefd30104457888703b002",
+  "new_experiments/experiments/x5_balanced.py": "48d16980ca3e7d9129f3dffad4d88b1a09e24311e976d2179273bded91a51f33",
+  "new_experiments/experiments/x6_nonlinear.py": "1ad366de67f9accaa1206ef0c0c3f718bc55c0dc9d5fd27f43ae54335c94449d",
+  "new_experiments/experiments/x7_alignment.py": "9af1ef79f7f368b34e191eabd407bcc5d5c611e61061ffec26bec0d8861fd120",
+  "new_experiments/experiments/x8_layerwise.py": "eb6a81878377c3d0dfb14a42eeec0f472de256a351851c6660440840f517ae62",
+  "code_and_results/idiom_subspace/studies.py": "aff0155ff903918b2942e76e1396ff352c7bb964aaf0509e12a45bd107d5ad62",
+  "code_and_results/idiom_subspace/geometry.py": "064e024ffb4a6789a190a2ee17e22352770af27e8e07bc41533d721a43221d5b",
+  "code_and_results/idiom_subspace/fastprobe.py": "611badfcd1dc3a05240031d9c61ed426dd100fccc751a4c8e97775719c5f29a5",
+  "code_and_results/idiom_subspace/data.py": "5b8961b375be7e2ba363c40668b107ddd0de30faaa4f2270b12ce06db738d97f",
+  "code_and_results/idiom_subspace/labels.py": "f767db8af3923d7079540f0de4a9439db46df4baaaebb44b32a48f4867734f20",
+  "code_and_results/idiom_subspace/extraction.py": "00a8d22092c93deaee0dcb26b5566b4f16dd100d4cd8078cdeda7396ba846eee",
+  "code_and_results/idiom_subspace/config.py": "aaceeddfccc98f9effc4dc9d84157586eb22059c15024bca80260a39f707e871"
+ },
+ "environment": {
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "packages": {
+   "numpy": "2.2.6",
+   "pandas": "2.3.3",
+   "scipy": "1.15.3",
+   "scikit-learn": "1.7.2",
+   "torch": "2.6.0+cu124",
+   "transformers": "4.57.6",
+   "sentence-transformers": "3.4.1",
+   "statsmodels": "0.14.6",
+   "accelerate": "1.15.0",
+   "bitsandbytes": null
+  },
+  "git_commit": "3ae085d3a116d0ab64b959fd776d81ffd323edbb",
+  "dirty_worktree": true,
+  "cuda_available": true,
+  "cuda_device": "NVIDIA GeForce RTX 3090"
+ },
+ "config": {
+  "probe_Cs": [
+   1.0
+  ],
+  "ranks": [
+   1,
+   2,
+   3,
+   4,
+   8,
+   11
+  ],
+  "null_draws": 1999,
+  "bootstrap": 1000,
+  "estimator_C": 1.0,
+  "estimator_ridge": 0.0,
+  "mlr_variant": "reference",
+  "probe_max_iter": 3000,
+  "min_den": 0.02,
+  "split_mode": "input_disjoint"
+ },
+ "rows": {
+  "subsets.csv": 1104,
+  "summary.csv": 48
+ },
+ "source": "en-idiom",
+ "targets": [
+  "bn-fig",
+  "bn-idiom"
+ ],
+ "methods": [
+  "COV",
+  "MLR"
+ ],
+ "subset_draws": 20
+}

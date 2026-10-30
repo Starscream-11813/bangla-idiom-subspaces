@@ -1,0 +1,7 @@
+measure,value,n,p
+AUC: transparency higher for literal paraphrases than idioms (both volunteers),0.7518783854621702,253,
+Spearman: transparency with the share judging the counterpart equivalent,0.21869162265589615,297,0.00014524769366874087
+share of opaque items both judged an idiom counterpart,0.8297872340425532,94,
+share of opaque items both judged a literal paraphrase,0.06382978723404255,94,
+share of transparent items both judged an idiom counterpart,0.4444444444444444,99,
+share of transparent items both judged a literal paraphrase,0.36363636363636365,99,

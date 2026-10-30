@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-10-21T07:48:49.993948+00:00",
+  "report": "REPORT.md",
+  "campaign": "CAMPAIGN",
+  "campaign_source_commit": "8d984246eb96bfeb8b061c7b4bbf90065cebb381",
+  "campaign_finished_utc": "2026-10-20T22:08:23.121067+00:00",
+  "campaign_core_source_hashes_still_match": true,
+  "source_files_verified": 28,
+  "portable_input_checksums_verified": 93,
+  "analysis_python": "PYTHON",
+  "plotting_environment": {
+    "python": "/usr/bin/python3",
+    "matplotlib": "3.10.3",
+    "numpy": "1.26.4",
+    "pandas": "2.3.1"
+  },
+  "scope": "Read-only analysis of canonical v4 outputs, plus explicitly post-hoc saved-outcome diagnostics; no primary result/model/config/paper edits.",
+  "new_inferential_diagnostics": [
+    "2000-draw paired component bootstrap for matched input-control accuracy differences; descriptive, unadjusted",
+    "Primary-direction complete-case GLMs: 2134 anchored records, original helper and covariates, cluster-robust SE, separate Holm family across 144 coefficients"
+  ],
+  "other_diagnostics": [
+    "macro recall from fixed TEST correctness",
+    "ambient identity tie-aware retrieval audit",
+    "population and pooling audit",
+    "tokenizer attribution of mBERT frame unknowns"
+  ],
+  "primary_significance_family_unchanged": true,
+  "raw_results_unchanged": true,
+  "analysis_code_sha256": {
+    "additional_diagnostics.py": "09abf86ec62d23de78d7f93d1b4a8d6e45f51f41d599788688e7b20841f3dbd2",
+    "analyze.py": "40bfefa392e25066b36ecee381791c99efb8d9fa5b5b2137ee4e1936f7df9afc",
+    "audit_identity_ties.py": "286553e7d0aa89eb3ff7c1edea6b65f6981b4d8adf29b2abab4db2615225ebc9",
+    "audit_inputs.py": "499644785159cffc5aaf7bb766cc04210a14120315c2b6ad70212359e7da7286",
+    "build_report.py": "58635a82461ee5fcf3a06a2414406e550a0c2d9205794034a415cb51c72d0ef2",
+    "plot_results.py": "dd4f692e7339dbf3de3296ba518bf57a2cc363dafffd82a51812e069758beba4",
+    "validate_report.py": "910641d6c43a867cda082ca3e03f335abeae2408552c858f074a485fa6813666"
+  },
+  "reproduction_order": [
+    "analyze.py",
+    "audit_inputs.py",
+    "audit_identity_ties.py",
+    "additional_diagnostics.py",
+    "plot_results.py",
+    "build_report.py",
+    "validate_report.py"
+  ],
+  "copies": [
+    "CAMPAIGN/analysis_20261021",
+    "BACKUP/analysis_20261021"
+  ]
+}

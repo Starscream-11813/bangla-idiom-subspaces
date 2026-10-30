@@ -1,0 +1,13 @@
+model,concept,original_n,missing_cp_transparency,complete_case_n,missingness_definition
+bert-base-multilingual-cased,F,2166,32,2134,missing_counterpart_or_unavailable_MiniLM_cosine
+bert-base-multilingual-cased,S,2166,32,2134,missing_counterpart_or_unavailable_MiniLM_cosine
+csebuetnlp/banglabert,F,2166,32,2134,missing_counterpart_or_unavailable_MiniLM_cosine
+csebuetnlp/banglabert,S,2166,32,2134,missing_counterpart_or_unavailable_MiniLM_cosine
+csebuetnlp/banglishbert,F,2166,32,2134,missing_counterpart_or_unavailable_MiniLM_cosine
+csebuetnlp/banglishbert,S,2166,32,2134,missing_counterpart_or_unavailable_MiniLM_cosine
+google/muril-large-cased,F,2166,32,2134,missing_counterpart_or_unavailable_MiniLM_cosine
+google/muril-large-cased,S,2166,32,2134,missing_counterpart_or_unavailable_MiniLM_cosine
+setu4993/LaBSE,F,2166,32,2134,missing_counterpart_or_unavailable_MiniLM_cosine
+setu4993/LaBSE,S,2166,32,2134,missing_counterpart_or_unavailable_MiniLM_cosine
+xlm-roberta-large,F,2166,32,2134,missing_counterpart_or_unavailable_MiniLM_cosine
+xlm-roberta-large,S,2166,32,2134,missing_counterpart_or_unavailable_MiniLM_cosine

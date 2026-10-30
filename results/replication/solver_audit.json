@@ -1,0 +1,7 @@
+{
+  "readouts_checked": 24720,
+  "solver_stop_success": 24720,
+  "failed_readouts": [],
+  "seconds": 2.51,
+  "stopping": "Gradient tolerance or objective stagnation as implemented; not all gradients certified below nominal tolerance."
+}

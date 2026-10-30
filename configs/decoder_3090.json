@@ -1,0 +1,147 @@
+{
+  "data": "auto",
+  "out": "out_v4_decoder_3090",
+  "controls": null,
+  "split_mode": "input_disjoint",
+  "split_fractions": [
+    0.4,
+    0.25,
+    0.1,
+    0.25
+  ],
+  "seeds": [
+    0
+  ],
+  "label_seeds": [
+    0
+  ],
+  "label_backend": "sentence-transformers",
+  "label_encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "classes": 12,
+  "models": [
+    {
+      "name": "Qwen/Qwen3-8B",
+      "revision": "main",
+      "kind": "decoder"
+    }
+  ],
+  "conditions": [
+    "bn-fig",
+    "bn-idiom",
+    "bn-para",
+    "en-idiom",
+    "en-trans",
+    "en-para"
+  ],
+  "pairs": [
+    [
+      "en-idiom",
+      "bn-fig"
+    ],
+    [
+      "bn-fig",
+      "en-idiom"
+    ],
+    [
+      "en-trans",
+      "bn-fig"
+    ],
+    [
+      "en-idiom",
+      "bn-context"
+    ],
+    [
+      "en-para",
+      "bn-para"
+    ]
+  ],
+  "concepts": [
+    "F",
+    "S"
+  ],
+  "methods": [
+    "RAND",
+    "PCA",
+    "MLR",
+    "LEACE"
+  ],
+  "ranks": [
+    1,
+    2,
+    3
+  ],
+  "pca_dim": null,
+  "layer_step": 4,
+  "layers": null,
+  "max_length": 128,
+  "batch_size": 8,
+  "device": "auto",
+  "precision": "auto",
+  "bootstrap": 100,
+  "null_draws": 9,
+  "min_den": 0.02,
+  "min_group": 20,
+  "probe_Cs": [
+    1.0
+  ],
+  "open_class_N": [
+    50,
+    200,
+    800
+  ],
+  "open_class_reps": 1,
+  "inference_method": "MLR",
+  "robustness": false,
+  "studies": [
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+  ],
+  "label_revision": "main",
+  "cpu_threads": 2,
+  "resume": true,
+  "progress": true,
+  "diagnostic_null_draws": 3,
+  "inference_groups": [
+    "all"
+  ],
+  "primary_test_groups": [
+    "all"
+  ],
+  "primary_test_pairs": [
+    [
+      "en-idiom",
+      "bn-fig"
+    ]
+  ],
+  "primary_test_concepts": [
+    "F",
+    "S"
+  ],
+  "permutation_unit": "component",
+  "min_permutation_movable_fraction": 0.5,
+  "estimator_ridge": 0.0,
+  "estimator_C": 1.0,
+  "probe_backend": "auto",
+  "probe_device": "auto",
+  "probe_max_iter": 3000,
+  "probe_batch_compact": 512,
+  "probe_batch_ambient": 32,
+  "estimator_batch": 32,
+  "mlr_variant": "reference",
+  "grid_rand_draws": 3,
+  "perm_null_draws": null,
+  "open_class_methods": [
+    "MLR",
+    "LEACE",
+    "RAND",
+    "PCA"
+  ],
+  "open_class_conditions": [
+    "bn-fig",
+    "bn-idiom",
+    "en-idiom"
+  ],
+  "open_class_ridge": "ledoit_wolf"
+}

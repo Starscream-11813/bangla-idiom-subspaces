@@ -1,0 +1,14 @@
+phase,model,layer,criterion,validation_score
+primary,xlm-roberta-large,24,"mean across supported configured ranks, F within bn-fig",0.2448717948717949
+primary,bert-base-multilingual-cased,12,"mean across supported configured ranks, F within bn-fig",0.23003663003663002
+primary,csebuetnlp/banglabert,9,"mean across supported configured ranks, F within bn-fig",0.27087912087912086
+primary,setu4993/LaBSE,6,"mean across supported configured ranks, F within bn-fig",0.2509157509157509
+primary,csebuetnlp/banglishbert,12,"mean across supported configured ranks, F within bn-fig",0.24157509157509158
+primary,google/muril-large-cased,12,"mean across supported configured ranks, F within bn-fig",0.27399267399267396
+identity,xlm-roberta-large,15,"mean across supported configured ranks, F within bn-fig",0.2446886446886447
+identity,bert-base-multilingual-cased,12,"mean across supported configured ranks, F within bn-fig",0.23076923076923075
+identity,csebuetnlp/banglabert,9,"mean across supported configured ranks, F within bn-fig",0.2714285714285714
+identity,setu4993/LaBSE,6,"mean across supported configured ranks, F within bn-fig",0.2549450549450549
+identity,csebuetnlp/banglishbert,6,"mean across supported configured ranks, F within bn-fig",0.2402930402930403
+identity,google/muril-large-cased,12,"mean across supported configured ranks, F within bn-fig",0.2805860805860806
+decoder,Qwen/Qwen3-8B,16,"mean across supported configured ranks, F within bn-fig",0.23882783882783884

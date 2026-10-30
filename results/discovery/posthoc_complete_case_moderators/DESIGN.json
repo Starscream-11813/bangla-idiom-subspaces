@@ -1,0 +1,7 @@
+{
+  "scope": "post-hoc diagnostic; separate from primary RAND/PERM families",
+  "selection": "en-idiom to bn-fig; remove missing cp_transparency; no outcome-based filtering",
+  "covariance": "component-cluster-robust GLM; original helper; training/refit uncertainty not included",
+  "correction": "Holm across every returned coefficient in this secondary 12-fit family",
+  "original_outputs_unchanged": true
+}

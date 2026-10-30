@@ -1,0 +1,76 @@
+[
+  {
+    "name": "xlm-roberta-large",
+    "revision": "c23d21b0620b635a76227c604d44e43a9f0ee389",
+    "license": "mit",
+    "safetensors_parameters": 561192082,
+    "source": "https://huggingface.co/api/models/xlm-roberta-large/revision/c23d21b0620b635a76227c604d44e43a9f0ee389",
+    "backbone_parameters": 559890432,
+    "hidden_size": 1024,
+    "num_hidden_layers": 24
+  },
+  {
+    "name": "bert-base-multilingual-cased",
+    "revision": "3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+    "license": "apache-2.0",
+    "safetensors_parameters": 178566653,
+    "source": "https://huggingface.co/api/models/bert-base-multilingual-cased/revision/3f076fdb1ab68d5b2880cb87a0886f315b8146f8",
+    "backbone_parameters": 177853440,
+    "hidden_size": 768,
+    "num_hidden_layers": 12
+  },
+  {
+    "name": "setu4993/LaBSE",
+    "revision": "5afa72968dfe068421082cbc30411073b15a6693",
+    "license": "apache-2.0",
+    "safetensors_parameters": 470927360,
+    "source": "https://huggingface.co/api/models/setu4993/LaBSE/revision/5afa72968dfe068421082cbc30411073b15a6693",
+    "backbone_parameters": 470926848,
+    "hidden_size": 768,
+    "num_hidden_layers": 12
+  },
+  {
+    "name": "google/muril-large-cased",
+    "revision": "ace319f0d17524297957e249aff028b0b7357ab5",
+    "license": null,
+    "safetensors_parameters": null,
+    "source": "https://huggingface.co/api/models/google/muril-large-cased/revision/ace319f0d17524297957e249aff028b0b7357ab5",
+    "backbone_parameters": 505907200,
+    "hidden_size": 1024,
+    "num_hidden_layers": 24
+  },
+  {
+    "name": "csebuetnlp/banglabert",
+    "revision": "9ce791f330578f50da6bc52b54205166fb5d1c8c",
+    "license": "cc-by-nc-sa-4.0",
+    "safetensors_parameters": null,
+    "source": "https://huggingface.co/api/models/csebuetnlp/banglabert/revision/9ce791f330578f50da6bc52b54205166fb5d1c8c",
+    "backbone_parameters": 110026752,
+    "hidden_size": 768,
+    "num_hidden_layers": 12,
+    "pinned_hub_license": null,
+    "license_source": "https://github.com/csebuetnlp/banglabert#license"
+  },
+  {
+    "name": "csebuetnlp/banglishbert",
+    "revision": "88f2777acd65160b2a6c07e5ffef2d232daadf87",
+    "license": "cc-by-nc-sa-4.0",
+    "safetensors_parameters": null,
+    "source": "https://huggingface.co/api/models/csebuetnlp/banglishbert/revision/88f2777acd65160b2a6c07e5ffef2d232daadf87",
+    "backbone_parameters": 110026752,
+    "hidden_size": 768,
+    "num_hidden_layers": 12,
+    "pinned_hub_license": null,
+    "license_source": "https://github.com/csebuetnlp/banglabert#license"
+  },
+  {
+    "name": "Qwen/Qwen3-8B",
+    "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+    "license": "apache-2.0",
+    "safetensors_parameters": 8190735360,
+    "source": "https://huggingface.co/api/models/Qwen/Qwen3-8B/revision/b968826d9c46dd6066d109eabc6255188de91218",
+    "backbone_parameters": 7568405504,
+    "hidden_size": 4096,
+    "num_hidden_layers": 36
+  }
+]

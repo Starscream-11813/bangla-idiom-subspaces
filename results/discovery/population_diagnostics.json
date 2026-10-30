@@ -1,0 +1,8 @@
+{
+  "identity_test_sense_pairs": 1889,
+  "identity_test_idiom_groups": 1622,
+  "primary_test_records": 2590,
+  "primary_exact_span_test_records": 2166,
+  "source_idiom_groups": 8782,
+  "distinct_original_idiom_strings": 8877
+}

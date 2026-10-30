@@ -1,0 +1,259 @@
+{
+ "created_utc": "2026-10-27T09:08:17.375570+00:00",
+ "results": "REPO/new_experiments3/results",
+ "experiments": {
+  "X15_matched_nulls": {
+   "status": "passed",
+   "created": "2026-10-27T06:42:02.006272+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X15_matched_nulls/tests.csv has rows",
+     "passed": true,
+     "detail": "48 rows",
+     "level": "error"
+    },
+    {
+     "check": "X15 gate: MLR cross accuracy on bn-fig reproduces the planned test (max |diff| <= 0.005)",
+     "passed": true,
+     "detail": "max |diff| = 0.0009234 over 12 cells",
+     "level": "error"
+    },
+    {
+     "check": "X15 gate: COV cross accuracy on bn-fig reproduces the estimator table (max |diff| <= 0.005)",
+     "passed": true,
+     "detail": "max |diff| = 0.0009234 over 12 cells",
+     "level": "error"
+    },
+    {
+     "check": "X15 gate: PCA cross accuracy on bn-fig reproduces the estimator table (max |diff| <= 0.005)",
+     "passed": true,
+     "detail": "max |diff| = 0.0009234 over 12 cells",
+     "level": "error"
+    },
+    {
+     "check": "X15_matched_nulls/tests.csv: probe_converged_cross >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    }
+   ]
+  },
+  "X16_idiom_prospective": {
+   "status": "passed",
+   "created": "2026-10-27T07:41:28.134637+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    1
+   ],
+   "checks": [
+    {
+     "check": "X16_idiom_prospective/tests.csv has rows",
+     "passed": true,
+     "detail": "24 rows",
+     "level": "error"
+    },
+    {
+     "check": "X16_idiom_prospective/gate.csv has rows",
+     "passed": true,
+     "detail": "24 rows",
+     "level": "error"
+    },
+    {
+     "check": "X16_idiom_prospective/zero_shot.csv has rows",
+     "passed": true,
+     "detail": "12 rows",
+     "level": "error"
+    },
+    {
+     "check": "X16: run used the frozen plan",
+     "passed": true,
+     "detail": "manifest e423d9f21f2f718a94745e885851dec7c4a96eeccca8898b809fc6af1199fd5c vs pinned e423d9f21f2f718a94745e885851dec7c4a96eeccca8898b809fc6af1199fd5c",
+     "level": "error"
+    },
+    {
+     "check": "X16 gate: split-1 COV and MLR accuracy on bn-fig reproduces the follow-up (max |diff| <= 0.005)",
+     "passed": true,
+     "detail": "max |diff| = 0.0009033 over 24 cells",
+     "level": "error"
+    },
+    {
+     "check": "X16: the plan's 1,999 draws per null were used",
+     "passed": true,
+     "detail": "smallest budget 1999",
+     "level": "warning"
+    },
+    {
+     "check": "X16_idiom_prospective/tests.csv: probe_converged_cross >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    },
+    {
+     "check": "X16_idiom_prospective/tests.csv: probe_converged_native >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    },
+    {
+     "check": "X16_idiom_prospective/zero_shot.csv: zs_probe_converged >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    }
+   ]
+  },
+  "X17_human_items": {
+   "status": "passed",
+   "created": "2026-10-27T07:43:46.438801+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X17_human_items/contrasts.csv has rows",
+     "passed": true,
+     "detail": "40 rows",
+     "level": "error"
+    },
+    {
+     "check": "X17_human_items/coverage.csv has rows",
+     "passed": true,
+     "detail": "12 rows",
+     "level": "error"
+    },
+    {
+     "check": "X17_human_items/accuracy.csv has rows",
+     "passed": true,
+     "detail": "72 rows",
+     "level": "error"
+    },
+    {
+     "check": "X17: judged items carry the packet's F class",
+     "passed": true,
+     "detail": "0 model x target cells differ",
+     "level": "error"
+    },
+    {
+     "check": "X17: at least 290 of the 300 judged items found on bn-idiom",
+     "passed": true,
+     "detail": "smallest count 300",
+     "level": "warning"
+    }
+   ]
+  },
+  "X18_refit_bootstrap": {
+   "status": "passed",
+   "created": "2026-10-27T09:08:15.225620+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X18_refit_bootstrap/draws.csv has rows",
+     "passed": true,
+     "detail": "4824 rows",
+     "level": "error"
+    },
+    {
+     "check": "X18_refit_bootstrap/summary.csv has rows",
+     "passed": true,
+     "detail": "24 rows",
+     "level": "error"
+    },
+    {
+     "check": "X18 gate: draw 0 reproduces the published readouts (agreement_cross >= 0.98)",
+     "passed": true,
+     "detail": "lowest 0.9880",
+     "level": "error"
+    },
+    {
+     "check": "X18 gate: draw 0 reproduces the published readouts (agreement_native >= 0.98)",
+     "passed": true,
+     "detail": "lowest 0.9972",
+     "level": "error"
+    },
+    {
+     "check": "X18: at least 90% of refit draws valid",
+     "passed": true,
+     "detail": "lowest share 1.000",
+     "level": "warning"
+    }
+   ]
+  },
+  "X19_counterpart_type": {
+   "status": "passed",
+   "created": "2026-10-27T07:47:32.381294+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X19_counterpart_type/subsets.csv has rows",
+     "passed": true,
+     "detail": "1104 rows",
+     "level": "error"
+    },
+    {
+     "check": "X19_counterpart_type/summary.csv has rows",
+     "passed": true,
+     "detail": "48 rows",
+     "level": "error"
+    },
+    {
+     "check": "X19: opaque, transparent and random subsets have one size per cell",
+     "passed": true,
+     "detail": "0 cells differ",
+     "level": "error"
+    },
+    {
+     "check": "X19: every opaque and transparent subset supports rank M",
+     "passed": true,
+     "detail": "0 invalid: []",
+     "level": "warning"
+    }
+   ]
+  }
+ }
+}

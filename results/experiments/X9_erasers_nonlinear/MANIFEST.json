@@ -1,0 +1,153 @@
+{
+ "experiment": "X9_erasers_nonlinear",
+ "created_utc": "2026-10-26T08:47:59.334373+00:00",
+ "campaign": "CAMPAIGN",
+ "followup": "CAMPAIGN/paper_followup_seed1_20261021",
+ "out": "CAMPAIGN/new_experiments2_20261026",
+ "models": [
+  "xlm-roberta-large",
+  "bert-base-multilingual-cased",
+  "setu4993/LaBSE",
+  "google/muril-large-cased",
+  "csebuetnlp/banglabert",
+  "csebuetnlp/banglishbert"
+ ],
+ "splits": [
+  0
+ ],
+ "options": {},
+ "code_sha256": {
+  "new_experiments2/experiments2/__init__.py": "9eb85ebe111710ee63f985dbdfb6821ac12be460af03acc0545d10db06b814fc",
+  "new_experiments2/experiments2/alignment.py": "9bfa431304f7e4a32f6d151b59b63c72a663d02cd86a5b34d89bcabdf181a8c2",
+  "new_experiments2/experiments2/common2.py": "192f21bbe31a0916088b197ce6b24c882a318e9eea861cfffdbc606e683daa36",
+  "new_experiments2/experiments2/erasers.py": "dd1c070bf8d9f4eca2d9f596b44d59fd31559b8f30d0cf18ce7f30ea2e1aa973",
+  "new_experiments2/experiments2/preflight2.py": "3b1fa6d2715ff08530f431c9a162f5a2def197f8b1a24186a638788c8658427d",
+  "new_experiments2/experiments2/verify2.py": "c4e750d16f305be52bb361cba6910a26decbc2c70af57c2a753b77128ac0adc4",
+  "new_experiments2/experiments2/x10_heldout_alignment.py": "4b957d60d5677aef5b38eb89513d7b73ef0d8d06f34d166de5f1fb6d21209ffd",
+  "new_experiments2/experiments2/x11_taxonomy.py": "709fdabe7c0026a368ef83cfc02584509a740991f00e7367b1b3e2307861d049",
+  "new_experiments2/experiments2/x12_penalty_path.py": "9ffd1ad969f9c358c1d85dc1012fe1254180132a95bbbf908ae9a2f493946947",
+  "new_experiments2/experiments2/x13_idiom_isolated.py": "6a2ec19ce397392ddfb8d16ec574a93b7ce41ceb932332888ee242f43abaf543",
+  "new_experiments2/experiments2/x14_decoder.py": "2850ec28eeef81067c554d9f92134f85eab4fd2ee5f3fbdc0d52fc0e08222fe4",
+  "new_experiments2/experiments2/x9_erasers.py": "516f4a82285134c1925469f243eaf6b7b9122f109883c863c8ee1f9f391c10e5",
+  "new_experiments2/run.py": "37e18ac09d3ee22f3a0e66e9b4f6bd15e25abc78f97362b2a229806392a0bd02",
+  "new_experiments/experiments/__init__.py": "f3af440e428c625659b30423bfb3a6d6609584212f06088e152cd29b93d86234",
+  "new_experiments/experiments/common.py": "4d86381ea5986db2cd06600c0e21a3a19d03a31c537e2045929fc99557efc51b",
+  "new_experiments/experiments/concepts.py": "00d86e46380b46e19d262eed8f9c6222882a87fc8b0e3a810eb4c99f00829fd7",
+  "new_experiments/experiments/metrics.py": "f1831497b8c175b017d03e10fb1c53d824dc24a4a57a374dcf7cd0c73a6088f8",
+  "new_experiments/experiments/nulls.py": "cd4d6f2248acf20e8e20da5fe46e0756a61881ed15cdeb7b53a8a2bedfca933f",
+  "new_experiments/experiments/preflight.py": "e35afafc3923c22023aed35bce7cd1f13fef2b38e1197b62cd6678307f09bb10",
+  "new_experiments/experiments/reference.py": "67a07630cf41759c215f80a57583e6cccf5302e09f6052e99e5d28ea12ba0138",
+  "new_experiments/experiments/verify.py": "aa93ab42b828201ec4836dacd132918bac2602c6a4ab6eac80681bb7d8f9ba61",
+  "new_experiments/experiments/x1_zero_shot.py": "798fdd0af6d6106603b28e17ed3432584e1c05fe9051a0206db84abb6bb234da",
+  "new_experiments/experiments/x2_concepts.py": "6268c7049f9564cf32c07b3b25b1c0488945ed9661f9a5168c3275a1e7fe131f",
+  "new_experiments/experiments/x3_leace.py": "0aef1af48ce75b889d9e8342f1de1efc14e2059754cd1ca85afa21d5ba1fd58c",
+  "new_experiments/experiments/x4_pooling.py": "ad8beef3f4a67c948912123b6c3c3421005e008503aefd30104457888703b002",
+  "new_experiments/experiments/x5_balanced.py": "48d16980ca3e7d9129f3dffad4d88b1a09e24311e976d2179273bded91a51f33",
+  "new_experiments/experiments/x6_nonlinear.py": "1ad366de67f9accaa1206ef0c0c3f718bc55c0dc9d5fd27f43ae54335c94449d",
+  "new_experiments/experiments/x7_alignment.py": "9af1ef79f7f368b34e191eabd407bcc5d5c611e61061ffec26bec0d8861fd120",
+  "new_experiments/experiments/x8_layerwise.py": "eb6a81878377c3d0dfb14a42eeec0f472de256a351851c6660440840f517ae62",
+  "code_and_results/idiom_subspace/studies.py": "aff0155ff903918b2942e76e1396ff352c7bb964aaf0509e12a45bd107d5ad62",
+  "code_and_results/idiom_subspace/geometry.py": "064e024ffb4a6789a190a2ee17e22352770af27e8e07bc41533d721a43221d5b",
+  "code_and_results/idiom_subspace/fastprobe.py": "611badfcd1dc3a05240031d9c61ed426dd100fccc751a4c8e97775719c5f29a5",
+  "code_and_results/idiom_subspace/data.py": "5b8961b375be7e2ba363c40668b107ddd0de30faaa4f2270b12ce06db738d97f",
+  "code_and_results/idiom_subspace/labels.py": "f767db8af3923d7079540f0de4a9439db46df4baaaebb44b32a48f4867734f20",
+  "code_and_results/idiom_subspace/extraction.py": "00a8d22092c93deaee0dcb26b5566b4f16dd100d4cd8078cdeda7396ba846eee",
+  "code_and_results/idiom_subspace/config.py": "aaceeddfccc98f9effc4dc9d84157586eb22059c15024bca80260a39f707e871"
+ },
+ "environment": {
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "packages": {
+   "numpy": "2.2.6",
+   "pandas": "2.3.3",
+   "scipy": "1.15.3",
+   "scikit-learn": "1.7.2",
+   "torch": "2.6.0+cu124",
+   "transformers": "4.57.6",
+   "sentence-transformers": "3.4.1",
+   "statsmodels": "0.14.6",
+   "accelerate": "1.15.0",
+   "bitsandbytes": null
+  },
+  "git_commit": "74e22431bad6ca9d009f59b9a9a6d953769a644f",
+  "dirty_worktree": true,
+  "cuda_available": true,
+  "cuda_device": "NVIDIA GeForce RTX 3090"
+ },
+ "config": {
+  "probe_Cs": [
+   1.0
+  ],
+  "ranks": [
+   1,
+   2,
+   3,
+   4,
+   8,
+   11
+  ],
+  "null_draws": 1999,
+  "bootstrap": 1000,
+  "estimator_C": 1.0,
+  "estimator_ridge": 0.0,
+  "mlr_variant": "reference",
+  "probe_max_iter": 3000,
+  "min_den": 0.02,
+  "split_mode": "input_disjoint"
+ },
+ "rows": {
+  "erasers.csv": 120,
+  "path.csv": 1883,
+  "linear.csv": 1182,
+  "mlp.csv": 192,
+  "summary.csv": 180
+ },
+ "parts": [
+  "linear",
+  "mlp"
+ ],
+ "source": "en-idiom",
+ "target": "bn-fig",
+ "fixed": [
+  "COV",
+  "LEACE",
+  "MLR"
+ ],
+ "mlp_erasers": [
+  "COV",
+  "LEACE",
+  "INLP",
+  "RLACE"
+ ],
+ "path_steps": [
+  1,
+  2,
+  4,
+  8,
+  16,
+  32,
+  64
+ ],
+ "guard_eps": 0.01,
+ "inlp_C": 1.0,
+ "inlp_max_rank": 264,
+ "rlace": {
+  "steps": 20000,
+  "batch": 256,
+  "pilot_steps": 1500,
+  "weight_decay": 0.0001,
+  "eval_every": 250,
+  "init_scale": 0.1
+ },
+ "rlace_lrs": [
+  0.003,
+  0.01,
+  0.03,
+  0.1
+ ],
+ "rotation_fit": "probe_validation",
+ "rotation_maps": [
+  "procrustes",
+  "procrustes_pca128"
+ ]
+}

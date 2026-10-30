@@ -1,0 +1,7 @@
+{
+  "discovery_test_records": 2590,
+  "followup_test_records": 2590,
+  "overlapping_test_records": 932,
+  "overlap_with_discovery_training": 1658,
+  "is_external_validation": false
+}

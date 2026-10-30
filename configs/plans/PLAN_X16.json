@@ -1,0 +1,37 @@
+{
+ "id": "X16",
+ "title": "Prospective test of the idiom without its context on the follow-up split",
+ "frozen": "2026-10-27, committed with new_experiments3 before any split-1 outcome for the target bn-idiom was computed",
+ "rationale": "The only test of the idiom alone (X13, split 0) was specified after its point estimates were known. This plan fixes the design, family, metric, nulls and decision rule before the follow-up split is examined for that target.",
+ "data": {
+  "split": "1 (the follow-up, seed 1; paper_followup_seed1_20261021/prepared/corpus_prepared.json)",
+  "source": "en-idiom (English counterpart idioms; subspaces estimated on SPACE)",
+  "target": "bn-idiom (the Bangla idiom alone in a neutral frame; probes on PROBE, C tuned on VALIDATION, scored on TEST)",
+  "layer": "each encoder's follow-up layer (layer_selection.json; chosen on native VALIDATION accuracy for bn-fig, never on transfer)",
+  "preprocessing": "the follow-up's: SPACE mean and global RMS over all original conditions",
+  "encoders": ["csebuetnlp/banglabert", "csebuetnlp/banglishbert", "bert-base-multilingual-cased", "xlm-roberta-large", "google/muril-large-cased", "setu4993/LaBSE"],
+  "concepts": {"F": 11, "S": 3}
+ },
+ "primary": {
+  "estimator": "COV (class-mean cross-covariance)",
+  "readout": "supervised: a Bangla-trained L2 logistic probe through the English subspace",
+  "metric": "balanced accuracy",
+  "statistic": "SSI = (cross - floor) / (native - floor), native = the same estimator fitted on bn-idiom SPACE; undefined when the denominator is at most 0.02",
+  "nulls": {"RAND": 1999, "PERM": 1999, "RANDCOV": 1999},
+  "family": "12 tests (6 encoders x F, S); Monte Carlo p with +1; Holm within each null over the 12 tests",
+  "decision": "a test passes when its Holm-adjusted p is at most .05 under all three nulls"
+ },
+ "secondary": [
+  "COV with accuracy as the metric (same nulls, family and rule)",
+  "MLR at the default penalty (C = 1), with balanced accuracy and with accuracy (same nulls, family and rule)",
+  "zero-shot: an English-trained probe through English COV directions applied unchanged to bn-idiom TEST, per-condition centring, against 999 RAND and 999 PERM zero-shot nulls, Holm over 12, balanced accuracy and accuracy",
+  "descriptive: native and English-direction gains over the floor in points, with component-bootstrap intervals"
+ ],
+ "gate": "on split 1, COV and MLR English-direction accuracy on bn-fig must reproduce the follow-up's scores.csv within 0.005 before X16 is reported",
+ "expectation": "From the post hoc split-0 analysis (X13), MuRIL and LaBSE are expected to pass the primary test; there is no prediction for the other four encoders. Expectations are stated for transparency and are not tests.",
+ "reporting": "All 12 primary and all secondary results are reported whatever their outcome.",
+ "caveats": [
+  "Split 1 re-partitions the same corpus: part of its TEST set was discovery TEST, so this is a prospective internal replication, not independent external validation.",
+  "The plan is frozen in the repository with its SHA-256 recorded in the code; it is not a public preregistration."
+ ]
+}

@@ -1,0 +1,444 @@
+{
+ "created_utc": "2026-10-26T15:20:02.603906+00:00",
+ "results": "REPO/new_experiments2/results",
+ "x7_reference": "REPO/new_experiments/results/X7_alignment",
+ "experiments": {
+  "X10_heldout_alignment": {
+   "status": "passed",
+   "created": "2026-10-26T04:32:47.208077+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X10_heldout_alignment/retrieval.csv has rows",
+     "passed": true,
+     "detail": "1296 rows",
+     "level": "error"
+    },
+    {
+     "check": "X10_heldout_alignment/procrustes_fit.csv has rows",
+     "passed": true,
+     "detail": "324 rows",
+     "level": "error"
+    },
+    {
+     "check": "X10_heldout_alignment/aligned.csv has rows",
+     "passed": true,
+     "detail": "504 rows",
+     "level": "error"
+    },
+    {
+     "check": "X10_heldout_alignment/summary.csv has rows",
+     "passed": true,
+     "detail": "60 rows",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted shared_dims_unaligned reproduces X7 (max |diff| <= 0.001)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted shared_dims_aligned reproduces X7 (max |diff| <= 0.01)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted ambient_acc reproduces X7 (max |diff| <= 0.002)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted SSI_published_cross_acc reproduces X7 (max |diff| <= 0.03)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted aligned_cross_acc reproduces X7 (max |diff| <= 0.005)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted SSI_aligned_cross_acc reproduces X7 (max |diff| <= 0.03)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted aligned_zero_shot_acc reproduces X7 (max |diff| <= 0.005)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted erase_aligned_drop_pp reproduces X7 (max |diff| <= 0.5)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted erase_unaligned_drop_pp reproduces X7 (max |diff| <= 0.5)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: SPACE-fitted erase_native_drop_pp reproduces X7 (max |diff| <= 0.5)",
+     "passed": true,
+     "detail": "max |diff| = 0 over 72 cells",
+     "level": "error"
+    },
+    {
+     "check": "X10 gate: unmapped and SPACE-mapped retrieval reproduce X7",
+     "passed": true,
+     "detail": "max |top1 diff| = 0.0000 over 432 rows",
+     "level": "error"
+    },
+    {
+     "check": "X7: centred NN retrieval reproduces the published S3 baselines",
+     "passed": true,
+     "detail": "max |top1 diff| = 0.0000 over 30 rows; identical n: True",
+     "level": "error"
+    },
+    {
+     "check": "X10_heldout_alignment/aligned.csv: probe_converged_aligned >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    },
+    {
+     "check": "X10_heldout_alignment/aligned.csv: probe_converged_zero_shot >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    }
+   ]
+  },
+  "X9_erasers_nonlinear": {
+   "status": "passed",
+   "created": "2026-10-26T08:47:59.334373+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X9_erasers_nonlinear/erasers.csv has rows",
+     "passed": true,
+     "detail": "120 rows",
+     "level": "error"
+    },
+    {
+     "check": "X9_erasers_nonlinear/path.csv has rows",
+     "passed": true,
+     "detail": "1883 rows",
+     "level": "error"
+    },
+    {
+     "check": "X9_erasers_nonlinear/linear.csv has rows",
+     "passed": true,
+     "detail": "1182 rows",
+     "level": "error"
+    },
+    {
+     "check": "X9_erasers_nonlinear/summary.csv has rows",
+     "passed": true,
+     "detail": "180 rows",
+     "level": "error"
+    },
+    {
+     "check": "X9_erasers_nonlinear/mlp.csv has rows",
+     "passed": true,
+     "detail": "192 rows",
+     "level": "error"
+    },
+    {
+     "check": "X9: every removed basis is orthonormal",
+     "passed": true,
+     "detail": "max error 2.00e-15",
+     "level": "error"
+    },
+    {
+     "check": "X9: INLP guards its source language on VALIDATION (>= 90% of fits)",
+     "passed": false,
+     "detail": "0.83 of 24 fits; unguarded: [['bert-base-multilingual-cased', 'F', 'en-idiom'], ['setu4993/LaBSE', 'F', 'en-idiom'], ['google/muril-large-cased', 'F', 'en-idiom'], ['google/muril-large-cased', 'F', 'bn-fig']]",
+     "level": "warning"
+    },
+    {
+     "check": "X9: R-LACE guards its source language on VALIDATION (gap <= 0.03, >= 90% of fits)",
+     "passed": false,
+     "detail": "0.21 of 24 fits; largest gap 0.160",
+     "level": "warning"
+    },
+    {
+     "check": "X9 gate: en-idiom-fitted COV/LEACE/MLR erasure reproduces X7 erase_unaligned_drop_pp (max |diff| <= 0.5 pp)",
+     "passed": true,
+     "detail": "max |diff| = 0.000 pp over 36 cells",
+     "level": "error"
+    },
+    {
+     "check": "X9 gate: ambient Bangla accuracy reproduces X7",
+     "passed": true,
+     "detail": "max |diff| = 0.0000",
+     "level": "error"
+    },
+    {
+     "check": "X9 gate: bn-fig-fitted COV/LEACE/MLR erasure reproduces X7 erase_native_drop_pp (max |diff| <= 0.5 pp)",
+     "passed": true,
+     "detail": "max |diff| = 0.000 pp over 36 cells",
+     "level": "error"
+    },
+    {
+     "check": "X9 gate: ambient Bangla accuracy reproduces X7",
+     "passed": true,
+     "detail": "max |diff| = 0.0000",
+     "level": "error"
+    },
+    {
+     "check": "X9_erasers_nonlinear/linear.csv: probe_converged_erase >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    },
+    {
+     "check": "X9_erasers_nonlinear/linear.csv: probe_converged_read >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    },
+    {
+     "check": "X9_erasers_nonlinear/erasers.csv: guard_probe_converged >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    },
+    {
+     "check": "X9_erasers_nonlinear/path.csv: probe_converged >= 95%",
+     "passed": true,
+     "detail": "0.999",
+     "level": "warning"
+    }
+   ]
+  },
+  "X11_taxonomy_robustness": {
+   "status": "passed",
+   "created": "2026-10-26T13:44:49.576283+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X11_taxonomy_robustness/tests.csv has rows",
+     "passed": true,
+     "detail": "48 rows",
+     "level": "error"
+    },
+    {
+     "check": "X11_taxonomy_robustness/ladder.csv has rows",
+     "passed": true,
+     "detail": "336 rows",
+     "level": "error"
+    },
+    {
+     "check": "X11_taxonomy_robustness/contrasts.csv has rows",
+     "passed": true,
+     "detail": "48 rows",
+     "level": "error"
+    },
+    {
+     "check": "X11 gate (label_report_split0): F rebuilt with seed 0 reproduces the campaign's F",
+     "passed": true,
+     "detail": "agreement 1.0000, ARI 1.0000 over 10357 records",
+     "level": "error"
+    },
+    {
+     "check": "X11 (label_report_split0): re-seeded taxonomies",
+     "passed": true,
+     "detail": "ARI with F (SPACE): {'F1': 0.515, 'F2': 0.479, 'F3': 0.634}",
+     "level": "warning"
+    },
+    {
+     "check": "X11 (label_report_split0): TAG has at least 6 classes and labels at least 30% of records",
+     "passed": true,
+     "detail": "k 12, labelled share 0.89, AMI with F 0.19349806843033143",
+     "level": "warning"
+    },
+    {
+     "check": "X11_taxonomy_robustness/tests.csv: probe_converged_cross >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    },
+    {
+     "check": "X11_taxonomy_robustness/tests.csv: probe_converged_native >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    }
+   ]
+  },
+  "X12_penalty_path": {
+   "status": "passed",
+   "created": "2026-10-26T04:50:04.639777+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0,
+    1
+   ],
+   "checks": [
+    {
+     "check": "X12_penalty_path/path.csv has rows",
+     "passed": true,
+     "detail": "264 rows",
+     "level": "error"
+    },
+    {
+     "check": "X12_penalty_path/selected.csv has rows",
+     "passed": true,
+     "detail": "96 rows",
+     "level": "error"
+    },
+    {
+     "check": "X12_penalty_path/summary.csv has rows",
+     "passed": true,
+     "detail": "32 rows",
+     "level": "error"
+    },
+    {
+     "check": "X12 gate: seed-1 MLR accuracies along C reproduce the follow-up's E2 path",
+     "passed": true,
+     "detail": "max |diff| = 0.0027 over 48 cells",
+     "level": "error"
+    },
+    {
+     "check": "X12: discovery COV readouts reproduce the published estimator table",
+     "passed": true,
+     "detail": "max |diff| = 0.0014 over 12 cells",
+     "level": "warning"
+    },
+    {
+     "check": "X12: the MLR image moves towards the COV image as C falls (the strong-penalty limit)",
+     "passed": true,
+     "detail": "median shared dimensions by C: {0.0001: 5.7, 0.001: 4.17, 0.01: 1.85, 0.1: 0.67, 1.0: 0.39, 10.0: 0.34}",
+     "level": "warning"
+    },
+    {
+     "check": "X12_penalty_path/path.csv: probe_converged >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    }
+   ]
+  },
+  "X13_idiom_isolated": {
+   "status": "passed",
+   "created": "2026-10-26T06:03:01.516698+00:00",
+   "models": [
+    "xlm-roberta-large",
+    "bert-base-multilingual-cased",
+    "setu4993/LaBSE",
+    "google/muril-large-cased",
+    "csebuetnlp/banglabert",
+    "csebuetnlp/banglishbert"
+   ],
+   "splits": [
+    0
+   ],
+   "checks": [
+    {
+     "check": "X13_idiom_isolated/tests.csv has rows",
+     "passed": true,
+     "detail": "24 rows",
+     "level": "error"
+    },
+    {
+     "check": "X13_idiom_isolated/absolute.csv has rows",
+     "passed": true,
+     "detail": "48 rows",
+     "level": "error"
+    },
+    {
+     "check": "X13_idiom_isolated/paired.csv has rows",
+     "passed": true,
+     "detail": "48 rows",
+     "level": "error"
+    },
+    {
+     "check": "X13_idiom_isolated/zero_shot.csv has rows",
+     "passed": true,
+     "detail": "48 rows",
+     "level": "error"
+    },
+    {
+     "check": "X13 gate: MLR cross accuracy on bn-idiom reproduces the published pair table",
+     "passed": true,
+     "detail": "max |diff| = 0.0008 over 12 tests",
+     "level": "error"
+    },
+    {
+     "check": "X13 gate: MLR SSI on bn-idiom reproduces the published pair table",
+     "passed": true,
+     "detail": "max |diff| = 0.0161 over 11 tests",
+     "level": "error"
+    },
+    {
+     "check": "X13_idiom_isolated/tests.csv: probe_converged_cross >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    },
+    {
+     "check": "X13_idiom_isolated/tests.csv: probe_converged_native >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    },
+    {
+     "check": "X13_idiom_isolated/zero_shot.csv: zs_probe_converged >= 95%",
+     "passed": true,
+     "detail": "1.000",
+     "level": "warning"
+    }
+   ]
+  },
+  "X14_decoder_powered": {
+   "status": "not run"
+  }
+ }
+}

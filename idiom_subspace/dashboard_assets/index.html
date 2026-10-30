@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Idiom Observatory</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='13' fill='%230e2834'/%3E%3Cpath d='M11 29L24 10l13 19-13 9z' fill='none' stroke='%2376d9bf' stroke-width='3'/%3E%3Cpath d='M11 29h26M24 10v28' stroke='%2376d9bf' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to experiment</a>
+  <aside class="sidebar" aria-label="Experiment navigation">
+    <a class="brand" href="#overview" aria-label="Idiom Observatory home">
+      <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M8 27 22 7l14 20-14 11zM8 27h28M22 7v31"/></svg>
+      <span>IDIOM<span class="brand-bottom">OBSERVATORY</span></span>
+    </a>
+    <div class="workspace-label">RESEARCH WORKSPACE</div>
+    <div class="language-pair"><span>বাংলা</span><span class="language-arrow">↔</span><span>English</span></div>
+    <nav class="section-nav" aria-label="Sections">
+      <a href="#overview"><span class="nav-icon">◫</span> Live overview</a>
+      <a href="#geometry"><span class="nav-icon">⌁</span> Representation geometry</a>
+      <a href="#results"><span class="nav-icon">≡</span> Transfer tests</a>
+      <a href="#protocol"><span class="nav-icon">◇</span> Operators &amp; selection</a>
+      <a href="#logs"><span class="nav-icon">›_</span> Job log</a>
+    </nav>
+    <div class="jobs-heading"><h2>MODEL JOBS</h2><span id="job-count">0</span></div>
+    <div id="job-list" class="job-list" aria-label="Select a model job"><p class="sidebar-empty">Looking for experiments…</p></div>
+    <div class="sidebar-bottom">
+      <div class="local-label"><span class="tiny-dot"></span> <span id="mode-label">LOCAL · READ ONLY</span></div>
+      <p id="root-path">Connecting to workspace</p>
+      <p class="poll-note" id="poll-note">Refreshes every 3 seconds</p>
+    </div>
+  </aside>
+
+  <main id="main" class="main">
+    <header class="page-header" id="overview">
+      <div><div class="eyebrow">CROSS-LINGUAL CONCEPT SUBSPACES</div><h1>Idiom Observatory<span class="title-dot">.</span></h1><p class="page-subtitle">A live view into the experiment, from representations to evidence.</p></div>
+      <div class="connection">
+        <span id="connection-badge" class="feed-badge"><span></span> CONNECTING</span>
+        <span id="last-sync">Waiting for local telemetry</span>
+        <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Toggle dark theme">◐ Theme</button>
+      </div>
+    </header>
+    <div id="connection-error" class="notice error-notice" hidden></div>
+    <div id="no-jobs" class="notice" hidden><strong>No experiments found yet.</strong> Start a run in the watched output folder. Existing runs appear when they have a status or progress file.</div>
+
+    <section class="card run-band" aria-label="Whole run">
+      <div class="card-heading"><div><span class="small-label">WHOLE RUN</span><h3 id="run-title">All model jobs under this folder</h3></div><span id="run-eta" class="eta-chip" hidden></span></div>
+      <div class="run-progress"><div class="progress-track tall" role="progressbar" aria-label="Completed model jobs" id="run-progress"><div id="run-fill"></div></div><span id="run-count">—</span></div>
+      <div id="run-chips" class="run-chips"></div>
+      <div id="queue" class="queue"></div>
+    </section>
+
+    <section class="experiment-heading" aria-label="Selected experiment">
+      <div class="experiment-title"><span class="small-label">SELECTED EXPERIMENT</span><h2 id="model-name">Waiting for an experiment</h2><div id="experiment-context" class="context-chips"></div></div>
+      <div id="job-status" class="status-pill neutral">NO JOB SELECTED</div>
+    </section>
+
+    <section class="stat-grid" aria-label="Live progress">
+      <article class="stat-card stage-stat"><div class="stat-heading">Current stage <span class="stat-symbol">↗</span></div><div id="stage-name" class="stage-name">Waiting</div><div class="progress-track" role="progressbar" aria-label="Current stage progress" id="stage-progress"><div id="stage-fill"></div></div><div class="stage-count"><span id="stage-count">—</span><span id="stage-rate">stage only</span></div><div id="stage-eta" class="stat-foot">No estimate yet</div></article>
+      <article class="stat-card"><div class="stat-heading">Layers analysed <span class="stat-symbol">≋</span></div><div id="layer-count" class="stat-value">—</div><div class="progress-track" role="progressbar" aria-label="Layer progress" id="layer-progress"><div id="layer-fill"></div></div><div id="layer-eta" class="stat-foot">Layer timing pending</div></article>
+      <article class="stat-card"><div class="stat-heading">Elapsed time <span class="stat-symbol">◷</span></div><div id="elapsed" class="stat-value">—</div><div id="stage-elapsed" class="stat-foot">No timing data yet</div></article>
+      <article class="stat-card"><div class="stat-heading">Valid feature rows <span class="stat-symbol">⌖</span></div><div id="valid-count" class="stat-value">—</div><div id="valid-note" class="stat-foot">Tokenization audit pending</div></article>
+    </section>
+
+    <section class="card pipeline-card" aria-label="Experiment pipeline">
+      <div class="card-heading"><div><span class="small-label">THE EXPERIMENT IN CONTEXT</span><h3>From text to a tested subspace</h3></div><span id="heartbeat" class="muted compact">No heartbeat yet</span></div>
+      <div id="pipeline" class="pipeline-diagram"></div><p id="stage-message" class="stage-message">Progress comes from the running process. Completed files remain available after a run stops.</p>
+      <div id="active-task" class="task-context"></div>
+      <div class="layer-strip-wrap"><span class="small-label">LAYERS</span><div id="layer-strip" class="layer-strip" aria-label="Layer completion"></div></div>
+    </section>
+
+    <section id="geometry" class="geometry-section">
+      <div class="section-heading"><div><span class="eyebrow">MEASURED REPRESENTATIONS</span><h2>Watch the geometry emerge</h2></div><span class="section-note">Only saved observations are plotted</span></div>
+      <div class="filter-bar" aria-label="Chart filters">
+        <label>Concept<select id="filter-concept" aria-label="Concept"></select></label>
+        <label>Estimator<select id="filter-method" aria-label="Estimator"></select></label>
+        <label>Rank<select id="filter-rank" aria-label="Subspace rank"></select></label>
+        <label>Estimate on<select id="filter-source" aria-label="Source condition"></select></label>
+        <span class="filter-arrow" aria-hidden="true">→</span>
+        <label>Probe on<select id="filter-target" aria-label="Target condition"></select></label>
+      </div>
+      <div class="chart-grid">
+        <article class="card layer-card"><div class="card-heading"><div><h3>Layer profile</h3><p id="layer-description" class="card-description">Concept recovery across the network</p></div><div class="segmented" aria-label="Layer metric"><button type="button" class="selected" data-metric="R" aria-pressed="true">Retention</button><button type="button" data-metric="L" aria-pressed="false">Leakage</button><button type="button" data-metric="SSI" aria-pressed="false">SSI</button></div></div><div id="layer-chart" class="chart-host"></div><div id="layer-legend" class="chart-legend"></div><p id="layer-footnote" class="chart-footnote">Held-out accuracy. Dashed: ambient probe; dotted: majority floor; ◆ validation-selected layer.</p></article>
+        <article class="card scatter-card"><div class="card-heading"><div><h3>Containment at a glance</h3><p class="card-description">More retention, less leakage</p></div><span class="chart-corner" aria-hidden="true">↖</span></div><div id="scatter-chart" class="chart-host"></div><p class="chart-footnote">Each point is a saved layer–estimator observation at the selected rank and pair.</p></article>
+        <article class="card estimator-card"><div class="card-heading"><div><h3>Estimators at one layer</h3><p id="estimator-description" class="card-description">Retention and leakage by estimator</p></div><label class="inline-select"><span class="sr-only">Layer</span><select id="estimator-layer"></select></label></div><div id="estimator-chart" class="chart-host"></div><p class="chart-footnote">Solid: retention. Light: leakage (accuracy outside the subspace). Dashed line: ambient probe.</p></article>
+        <article class="card open-card"><div class="card-heading"><div><h3>Estimating a concept subspace</h3><p class="card-description">Generalization as estimation data grows</p></div><label class="inline-select"><span class="sr-only">Open-class metric</span><select id="open-metric"><option value="R">Retention</option><option value="L">Leakage</option></select></label></div><div id="open-chart" class="chart-host"></div><div id="open-legend" class="chart-legend"></div><p class="chart-footnote">Means across saved repetitions; held-out idiom types, fixed class inventory.</p></article>
+        <article class="card data-card"><div class="card-heading"><div><h3>The evaluation population</h3><p class="card-description">Independent splits, explicit coverage</p></div><span class="chart-corner" aria-hidden="true">◫</span></div><div id="split-chart" class="split-chart"></div><div id="split-legend" class="split-legend"></div><div id="data-facts" class="data-facts"></div><p id="split-warning" class="coverage-note" hidden></p></article>
+        <article class="card timing-card"><div class="card-heading"><div><h3>Where time goes</h3><p class="card-description">Per-layer durations and recorded stages</p></div><span class="stat-symbol">◷</span></div><div id="layer-timing" class="chart-host small-host"></div><div id="stage-history" class="stage-history"></div><p class="chart-footnote">Estimates use measured durations of completed units; heterogeneous stages make them approximate.</p></article>
+      </div>
+    </section>
+
+    <section id="results" class="results-section">
+      <div class="section-heading"><div><span class="eyebrow">CALIBRATED INFERENCE</span><h2>Transfer tests at the selected layer</h2></div><span class="section-note">Primary rows carry the formal p-values</span></div>
+      <article class="card table-card"><div class="card-heading"><div><h3>Shared-Subspace Index</h3><p class="card-description">SSI with component-bootstrap 95% CI, random-subspace and label-permutation nulls</p></div><label class="toggle"><input type="checkbox" id="primary-only" checked> Primary only</label></div><div id="inference-table" class="table-host"></div></article>
+      <div class="chart-grid two">
+        <article class="card table-card"><div class="card-heading"><div><h3>Global similarity baselines</h3><p class="card-description">CKA and paired retrieval at the selected layer</p></div></div><div id="baseline-table" class="table-host"></div></article>
+        <article class="card table-card"><div class="card-heading"><div><h3>Moderator contrasts</h3><p class="card-description">Paired component bootstrap; descriptive</p></div></div><div id="contrast-table" class="table-host"></div></article>
+      </div>
+    </section>
+
+    <section id="protocol" class="protocol-section">
+      <div class="section-heading"><div><span class="eyebrow">UNDERSTANDING THE OPERATORS</span><h2>A direction is only part of the story</h2></div><span class="illustrative-label">ILLUSTRATIVE · NOT MEASURED</span></div>
+      <div class="protocol-grid">
+        <article class="card projection-card"><div class="card-heading"><div><h3>Projection &amp; complement</h3><p class="card-description">Explore two rules with the same image axis</p></div><div class="segmented projection-toggle"><button type="button" class="selected" data-projection="orthogonal" aria-pressed="true">Orthogonal</button><button type="button" data-projection="oblique" aria-pressed="false">Oblique</button></div></div><div class="projection-content"><div id="projection-chart"></div><div class="projection-explanation"><div class="equation">x = Px + (I − P)x</div><dl><div><dt>Input x</dt><dd>(2, 1)</dd></div><div><dt>Projected Px</dt><dd id="projection-value">(2, 0)</dd></div><div><dt>Residual (I − P)x</dt><dd id="residual-value">(0, 1)</dd></div></dl><p id="projection-note">An orthogonal projection drops the perpendicular component.</p><p class="operator-note">LEACE uses its oblique operator (as in the reference code); RAND, PCA, MLR, LDA, CPCA and COV use orthogonal projections.</p></div></div></article>
+        <article class="card selection-card"><div class="card-heading"><div><h3>Layer selection</h3><p class="card-description">Chosen on VALIDATION only; TEST is never used</p></div><span class="stat-symbol">◆</span></div><div id="selection" class="selection-body"></div></article>
+      </div>
+    </section>
+
+    <section id="logs" class="log-section">
+      <div class="section-heading"><div><span class="eyebrow">PROCESS OUTPUT</span><h2>Job log</h2></div><span class="section-note">Last lines of job.log (sanitized)</span></div>
+      <article class="card"><pre id="log-tail" class="log-tail">No log file found for this job.</pre></article>
+    </section>
+    <footer><span><span class="footer-mark">◇</span> Idiom Observatory</span><span id="footer-note">Local files · Reproducible evidence · No cloud service</span></footer>
+  </main>
+</body>
+</html>

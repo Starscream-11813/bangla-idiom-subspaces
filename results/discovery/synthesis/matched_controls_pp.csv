@@ -1,0 +1,49 @@
+model,concept,control,n,n_components,cross_span,cross_control,span_minus_control,ci_lo,ci_hi,note
+mBERT,F,masked context,2166,1053,16.7590027700831,16.2511542012927,0.50784856879039,-1.87229296403011,2.6762370311457397,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+mBERT,F,idiom without context,2166,1053,16.7590027700831,16.343490304709142,0.41551246537396,-1.44797909506632,2.3047455407683803,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+mBERT,F,whole sentence,2166,1053,16.7590027700831,16.98984302862419,-0.23084025854107998,-1.76804617763592,1.45374000695997,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+mBERT,F,Bangla gloss,2165,1052,16.76674364896073,20.60046189376443,-3.8337182448036895,-6.11877066603684,-1.5707928076772602,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+mBERT,S,masked context,2166,1053,48.29178208679593,46.76823638042474,1.52354570637119,-0.25149723463186,3.3196170158963603,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+mBERT,S,idiom without context,2166,1053,48.29178208679593,46.62973222530009,1.66204986149584,-0.09713453132588,3.4632819820244203,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+mBERT,S,whole sentence,2166,1053,48.29178208679593,46.95290858725762,1.33887349953831,-0.14187505910241,2.83406365868926,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+mBERT,S,Bangla gloss,2165,1052,48.26789838337182,48.45265588914549,-0.18475750577367,-2.30344903947588,2.08451107621152,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglaBERT,F,masked context,2166,1053,18.09787626962142,17.77469990766389,0.32317636195752003,-1.69105859773022,2.44836319032017,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglaBERT,F,idiom without context,2166,1053,18.09787626962142,16.89750692520775,1.20036934441366,-0.9052145320693299,3.1356234780919903,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglaBERT,F,whole sentence,2166,1053,18.09787626962142,21.09879963065558,-3.00092336103416,-5.0810162041885,-0.92727372266248,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglaBERT,F,Bangla gloss,2166,1053,18.09787626962142,23.36103416435826,-5.26315789473684,-7.56672562834931,-2.85991664385676,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglaBERT,S,masked context,2166,1053,48.52262234533702,50.32317636195752,-1.80055401662049,-3.88968245335145,0.42321639850533,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglaBERT,S,idiom without context,2166,1053,48.52262234533702,46.9067405355494,1.61588180978762,-0.51389618646294,3.61970195384286,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglaBERT,S,whole sentence,2166,1053,48.52262234533702,49.12280701754385,-0.60018467220683,-2.41629074110264,1.1655147557666201,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglaBERT,S,Bangla gloss,2166,1053,48.52262234533702,51.38504155124654,-2.86241920590951,-5.22813909399535,-0.30384852710415,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglishBERT,F,masked context,2166,1053,17.22068328716528,17.682363804247462,-0.46168051708217006,-2.38949051790266,1.55772295766828,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglishBERT,F,idiom without context,2166,1053,17.22068328716528,17.26685133887349,-0.04616805170821,-1.96674415898283,2.0119940981769098,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglishBERT,F,whole sentence,2166,1053,17.22068328716528,19.75992613111726,-2.53924284395198,-4.386053428222421,-0.6843384399294901,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglishBERT,F,Bangla gloss,2166,1053,17.22068328716528,22.853185595567858,-5.6325023084025805,-8.06096543774402,-3.17658896403136,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglishBERT,S,masked context,2166,1053,50.55401662049861,51.47737765466297,-0.92336103416435,-3.3306832769284602,1.44665427379603,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglishBERT,S,idiom without context,2166,1053,50.55401662049861,51.15420129270545,-0.60018467220683,-2.61835702386936,1.5316605335631701,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglishBERT,S,whole sentence,2166,1053,50.55401662049861,54.385964912280706,-3.83194829178208,-6.37004607581898,-1.52707632216423,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+BanglishBERT,S,Bangla gloss,2166,1053,50.55401662049861,55.26315789473685,-4.7091412742382195,-7.14973118425747,-2.42663234978705,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+MuRIL,F,masked context,2166,1053,22.9455216989843,19.94459833795014,3.00092336103416,0.69357230655545,5.33520908916261,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+MuRIL,F,idiom without context,2166,1053,22.9455216989843,19.75992613111726,3.18559556786703,1.29982021588862,5.1607775632287805,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+MuRIL,F,whole sentence,2166,1053,22.9455216989843,25.11542012927054,-2.16989843028624,-4.28300057993495,0.17549203718594,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+MuRIL,F,Bangla gloss,2166,1053,22.9455216989843,37.30378578024007,-14.35826408125577,-17.366532469620548,-11.45721358694613,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+MuRIL,S,masked context,2166,1053,49.81532779316713,51.24653739612188,-1.43120960295475,-4.26156578833879,1.31075622440591,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+MuRIL,S,idiom without context,2166,1053,49.81532779316713,48.9843028624192,0.83102493074792,-1.2392576785451102,2.94435504725742,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+MuRIL,S,whole sentence,2166,1053,49.81532779316713,52.21606648199446,-2.40073868882733,-4.89765274471202,0.05060491427719001,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+MuRIL,S,Bangla gloss,2166,1053,49.81532779316713,54.8938134810711,-5.07848568790397,-8.134213923914869,-1.90555330496955,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+LaBSE,F,masked context,2166,1053,21.09879963065558,20.31394275161588,0.7848568790397,-1.33853604147804,2.8363858557643398,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+LaBSE,F,idiom without context,2166,1053,21.09879963065558,16.89750692520775,4.20129270544783,1.9547544700822699,6.25526620001098,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+LaBSE,F,whole sentence,2166,1053,21.09879963065558,24.330563250230842,-3.23176361957525,-5.1675878567893,-1.25766509433962,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+LaBSE,F,Bangla gloss,2166,1053,21.09879963065558,31.94829178208679,-10.84949215143121,-13.442659212842761,-8.14515348230366,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+LaBSE,S,masked context,2166,1053,50.13850415512465,49.4921514312096,0.6463527239150499,-1.8011632267336701,3.1658913378775,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+LaBSE,S,idiom without context,2166,1053,50.13850415512465,48.79963065558633,1.33887349953831,-0.60524569224604,3.2395902334284403,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+LaBSE,S,whole sentence,2166,1053,50.13850415512465,51.5697137580794,-1.43120960295475,-3.2439209223935497,0.33588148703591,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+LaBSE,S,Bangla gloss,2166,1053,50.13850415512465,54.986149584487535,-4.8476454293628795,-7.343388499371439,-2.30916058739373,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+XLM-R,F,masked context,2166,1053,18.65189289012003,18.65189289012003,0.0,-2.14442073796133,1.8303973499824397,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+XLM-R,F,idiom without context,2166,1053,18.65189289012003,14.77377654662973,3.8781163434903,1.8041983078891402,5.78655562448097,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+XLM-R,F,whole sentence,2166,1053,18.65189289012003,22.20683287165281,-3.55493998153277,-5.30480796779059,-1.6827072041795998,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+XLM-R,F,Bangla gloss,2166,1053,18.65189289012003,23.86888273314866,-5.21698984302862,-7.542135033780049,-2.92368561349163,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+XLM-R,S,masked context,2166,1053,51.10803324099723,48.9843028624192,2.12373037857802,-0.30245879957653,4.7911112162407195,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+XLM-R,S,idiom without context,2166,1053,51.10803324099723,47.46075715604801,3.64727608494921,1.36539724891363,6.14096802842623,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+XLM-R,S,whole sentence,2166,1053,51.10803324099723,51.5697137580794,-0.46168051708217006,-2.46098511738301,1.5867071931684198,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim
+XLM-R,S,Bangla gloss,2166,1053,51.10803324099723,49.63065558633425,1.47737765466297,-0.6667865707434,3.59303748171745,post_hoc_descriptive_paired_component_bootstrap_2000_no_multiplicity_claim

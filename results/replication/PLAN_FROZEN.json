@@ -1,0 +1,49 @@
+{
+  "plan_sha256": "90768f4f593e94187f8be8764d32412bd5676e8d92dcc6996752ebc52c339fcd",
+  "sources": {
+    "paper_v2/scripts/run_followup.py": "f640f86cb9bf87686c48ed5654b2c96ab4a5043ad0e6a341921101e1809ff48b",
+    "paper_v2/FOLLOWUP_PLAN.md": "90768f4f593e94187f8be8764d32412bd5676e8d92dcc6996752ebc52c339fcd",
+    "code_and_results/idiom_subspace/fastprobe.py": "611badfcd1dc3a05240031d9c61ed426dd100fccc751a4c8e97775719c5f29a5",
+    "code_and_results/idiom_subspace/studies.py": "aff0155ff903918b2942e76e1396ff352c7bb964aaf0509e12a45bd107d5ad62",
+    "code_and_results/idiom_subspace/geometry.py": "064e024ffb4a6789a190a2ee17e22352770af27e8e07bc41533d721a43221d5b"
+  },
+  "campaign": "CAMPAIGN",
+  "hypotheses": 48,
+  "frozen_at_utc": "2026-10-21T12:04:07.566955+00:00",
+  "environment": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+    "packages": {
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "scipy": "1.15.3",
+      "scikit-learn": "1.7.2",
+      "torch": "2.6.0+cu124",
+      "transformers": "4.57.6",
+      "sentence-transformers": "3.4.1",
+      "statsmodels": "0.14.6",
+      "accelerate": "1.15.0",
+      "bitsandbytes": null
+    },
+    "git_commit": "fce586c83a8720d504a17dfe8a41616003f994b9",
+    "dirty_worktree": true,
+    "source_files_sha256": {
+      "idiom_subspace/__init__.py": "28db3fc883c957ff0ca51d84028cf52568d5140b962c87db14ede772ce7d3271",
+      "idiom_subspace/behavior.py": "7d1ce683a1fd9057920f788c892c7ddca536d41ca75abf899304dd6314eddf40",
+      "idiom_subspace/config.py": "aaceeddfccc98f9effc4dc9d84157586eb22059c15024bca80260a39f707e871",
+      "idiom_subspace/dashboard_server.py": "ed40668e4ca8562745961ce3a6357de5afef6f3dd6efae4fa54a2350876a7584",
+      "idiom_subspace/data.py": "5b8961b375be7e2ba363c40668b107ddd0de30faaa4f2270b12ce06db738d97f",
+      "idiom_subspace/extraction.py": "00a8d22092c93deaee0dcb26b5566b4f16dd100d4cd8078cdeda7396ba846eee",
+      "idiom_subspace/fastprobe.py": "611badfcd1dc3a05240031d9c61ed426dd100fccc751a4c8e97775719c5f29a5",
+      "idiom_subspace/geometry.py": "064e024ffb4a6789a190a2ee17e22352770af27e8e07bc41533d721a43221d5b",
+      "idiom_subspace/interventions.py": "39acc981e9dd916cc176f03ca94614dee517918e12072780f921226bd2a14aaf",
+      "idiom_subspace/labels.py": "f767db8af3923d7079540f0de4a9439db46df4baaaebb44b32a48f4867734f20",
+      "idiom_subspace/literal.py": "64b882cf2413bbf9aa0851adaafabf051b0c3d1015ca346a0230ce157c147964",
+      "idiom_subspace/progress.py": "174bf2a2090c053d9970478952ae782e6be9c0d848d9e66f85e33bf6d073adcc",
+      "idiom_subspace/runner.py": "2d348f43e44157a94cbe381ee2c3b9b4e27f3f24968cb8b097d10fbdbcbb4575",
+      "idiom_subspace/studies.py": "aff0155ff903918b2942e76e1396ff352c7bb964aaf0509e12a45bd107d5ad62",
+      "run_research.py": "5a6542b7089998adbf1423deaa806954019103adc6973791897936a69bc8c327",
+      "launch_gpu_jobs.py": "c2c313383619c844de608276afcb7a0024daa4f0a7b537cdfee33b64c6718984"
+    }
+  }
+}

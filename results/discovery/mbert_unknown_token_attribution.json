@@ -1,0 +1,16 @@
+{
+  "unknown_total": 20476,
+  "unknown_target": 0,
+  "target_tokens": 48637,
+  "unknown_target_fraction": 0.0,
+  "common_unknown_substrings": [
+    [
+      "“",
+      10238
+    ],
+    [
+      "”",
+      10238
+    ]
+  ]
+}

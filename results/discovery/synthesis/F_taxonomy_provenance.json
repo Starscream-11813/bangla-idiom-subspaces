@@ -1,0 +1,13 @@
+{
+  "code_commit": "8d984246eb96bfeb8b061c7b4bbf90065cebb381",
+  "split_seed": 0,
+  "label_seed": 0,
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "counts_match_campaign": true,
+  "reseed_ARI": [
+    0.39947950374544955,
+    0.4320098045635627,
+    0.43231825283656894
+  ]
+}

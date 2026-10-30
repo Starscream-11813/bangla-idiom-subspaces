@@ -1,0 +1,18 @@
+# Research environment (Python 3.10+). Every run records the installed versions and resolved model commits.
+numpy>=1.26,<3
+pandas>=2.1,<3
+scipy>=1.11,<2
+scikit-learn>=1.4,<2
+statsmodels>=0.14,<0.15
+torch>=2.2,<3
+transformers>=4.51,<6
+sentence-transformers>=3,<6
+sentencepiece>=0.2,<1
+protobuf>=4
+kagglehub>=0.3,<1
+accelerate>=1,<2
+pytest>=8,<10
+tqdm>=4.66,<5
+threadpoolctl>=3,<4
+# Required preprocessing for BanglaBERT/BanglishBERT, pinned upstream revision.
+git+https://github.com/csebuetnlp/normalizer.git@d405944dde5ceeacb7c2fd3245ae2a9dea5f35c9
