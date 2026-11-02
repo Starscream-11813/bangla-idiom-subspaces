@@ -112,7 +112,7 @@ python analysis/synthesize.py                    # results/discovery/synthesis/ 
 python analysis/plot_results.py                  # optional exploratory figures in analysis/figures/
 ```
 
-`synthesize.py` needs only the released tables, so it runs without the campaign; rerunning it reproduces every file in `results/discovery/synthesis/`.
+`synthesize.py` needs only the released tables, so it runs without the campaign; rerunning it reproduces every file in `results/discovery/synthesis/`. `python analysis/repeated_estimates.py` also needs only the released tables; it compares repeated baselines with the estimates the paper reports and writes `results/repeated_estimates.csv`.
 
 ## 6. Prospective internal replication (split seed 1)
 

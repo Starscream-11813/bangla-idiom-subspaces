@@ -4,7 +4,7 @@ Written by [`run_experiments.py`](../../run_experiments.py) on one GPU, after ea
 
 | Folder | Question | Main files |
 |:---|:---|:---|
-| `X1_zero_shot` | Does an English-trained classifier read Bangla through English directions with no Bangla labels? | `summary.csv` |
+| `X1_zero_shot` | Does a classifier trained only on English read Bangla through English directions? | `summary.csv` |
 | `X2_concepts` | Does the planned test hold for concepts not built from English glosses (a Bangla-gloss taxonomy FBN, usage domains DOM)? | `tests.csv`, `ladder.csv`, `contrasts.csv`, `labels_split0.csv.gz` |
 | `X3_leace_ablation` | Is LEACE's cross-lingual deficit due to whitening error, sample size or the probe penalty? | `summary.csv` |
 | `X4_pooling_matched` | Does the input or the pooled tokens move accuracy (idiom present or masked × span or context pooling)? | `cells.csv`, `contrasts.csv`, `extraction_check.csv`, `tokens.csv` |
